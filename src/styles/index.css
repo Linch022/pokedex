@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+:root {
+  --main-color: #f5d100;
+  --black-color: #030303;
+  --background-color: #f5f4f4;
+  --main-font: 'Silkscreen', cursive;
+  --fire-color: rgb(230, 34, 36, 0.75);
+  --flying-color: rgba(130, 187, 240, 0.75);
+  --grass-color: rgb(61, 162, 37, 0.75);
+  --poison-color: rgb(147, 63, 205, 0.75);
+  --water-color: rgb(35, 129, 240, 0.75);
+  --bug-color: rgb(147, 163, 18, 0.75);
+  --normal-color: rgb(160, 162, 160, 0.75);
+  --electric-color: rgb(251, 195, 0, 0.75);
+  --ground-color: rgb(146, 81, 29, 0.75);
+  --fairy-color: rgb(241, 112, 239, 0.75);
+  --fighting-color: rgb(255, 129, 0, 0.75);
+  --psychic-color: rgb(241, 62, 122, 0.75);
+  --rock-color: rgb(176, 171, 129, 0.75);
+  --ice-color: rgb(61, 216, 254, 0.75);
+  --dragon-color: rgb(79, 96, 226, 0.75);
+  --steel-color: rgb(94, 162, 186, 0.75);
+  --ghost-color: rgb(113, 62, 112, 0.75);
+}
+
+* {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--main-font);
+}
+
+.app {
+  background-color: var(--background-color);
+}
