@@ -1,0 +1,1229 @@
+.image-pokemon {
+  height: 150px;
+  width: 150px;
+}
+
+.pokemon-card {
+  width: 380px;
+  height: 170px;
+  background-color: white;
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.text-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 50%;
+}
+
+.Vol {
+  background-color: var(--flying-color);
+  border: 4mm ridge var(--flying-color-full);
+}
+.Feu {
+  background-color: var(--fire-color);
+  border: 4mm ridge var(--fire-color-full);
+}
+.Plante {
+  background-color: var(--grass-color);
+  border: 4mm ridge var(--grass-color-full);
+}
+.Poison {
+  background-color: var(--poison-color);
+  border: 4mm ridge var(--poison-color-full);
+}
+.Eau {
+  background-color: var(--water-color);
+  border: 4mm ridge var(--water-color-full);
+}
+.Insecte {
+  background-color: var(--bug-color);
+  border: 4mm ridge var(--bug-color-full);
+}
+.Normal {
+  background-color: var(--normal-color);
+  border: 4mm ridge var(--normal-color-full);
+}
+.Électrik {
+  background-color: var(--electric-color);
+  border: 4mm ridge var(--electric-color-full);
+}
+.Sol {
+  background-color: var(--ground-color);
+  border: 4mm ridge var(--ground-color-full);
+}
+.Fée {
+  background-color: var(--fairy-color);
+  border: 4mm ridge var(--fairy-color-full);
+}
+.Combat {
+  background-color: var(--fighting-color);
+  border: 4mm ridge var(--fighting-color-full);
+}
+.Psy {
+  background-color: var(--psychic-color);
+  border: 4mm ridge var(--psychic-color-full);
+}
+.Roche {
+  background-color: var(--rock-color);
+  border: 4mm ridge var(--rock-color-full);
+}
+.Glace {
+  background-color: var(--ice-color);
+  border: 4mm ridge var(--ice-color-full);
+}
+.Dragon {
+  background-color: var(--dragon-color);
+  border: 4mm ridge var(--dragon-color-full);
+}
+.Acier {
+  background-color: var(--steel-color);
+  border: 4mm ridge var(--steel-color-full);
+}
+.Spectre {
+  background-color: var(--ghost-color);
+  border: 4mm ridge var(--ghost-color-full);
+}
+.Ténèbres {
+  background-color: var(--dark-color);
+  border: 4mm ridge var(--dark-color-full);
+}
+
+.Acier-Combat {
+  background: linear-gradient(
+    to bottom right,
+    var(--steel-color) 50%,
+    var(--fighting-color) 60%
+  );
+  border: 4mm ridge var(--steel-color-full);
+}
+
+.Acier-Roche {
+  background: linear-gradient(
+    to bottom right,
+    var(--steel-color) 50%,
+    var(--rock-color) 60%
+  );
+  border: 4mm ridge var(--steel-color-full);
+}
+
+.Acier-Spectre {
+  background: linear-gradient(
+    to bottom right,
+    var(--steel-color) 50%,
+    var(--ghost-color) 60%
+  );
+  border: 4mm ridge var(--steel-color-full);
+}
+
+.Acier-Vol {
+  background: linear-gradient(
+    to bottom right,
+    var(--steel-color) 50%,
+    var(--flying-color) 60%
+  );
+  border: 4mm ridge var(--steel-color-full);
+}
+
+.Acier-Sol {
+  background: linear-gradient(
+    to bottom right,
+    var(--steel-color) 50%,
+    var(--ground-color) 60%
+  );
+  border: 4mm ridge var(--steel-color-full);
+}
+
+.Acier-Insecte {
+  background: linear-gradient(
+    to bottom right,
+    var(--steel-color) 50%,
+    var(--bug-color) 60%
+  );
+  border: 4mm ridge var(--steel-color-full);
+}
+
+.Combat-Normal {
+  background: linear-gradient(
+    to bottom right,
+    var(--fighting-color) 50%,
+    var(--normal-color) 60%
+  );
+  border: 4mm ridge var(--fighting-color-full);
+}
+
+.Dragon-Acier {
+  background: linear-gradient(
+    to bottom right,
+    var(--dragon-color) 50%,
+    var(--steel-color) 60%
+  );
+  border: 4mm ridge var(--dragon-color-full);
+}
+
+.Dragon-Spectre {
+  background: linear-gradient(
+    to bottom right,
+    var(--dragon-color) 50%,
+    var(--ghost-color) 60%
+  );
+  border: 4mm ridge var(--dragon-color-full);
+}
+
+.Dragon-Électrik {
+  background: linear-gradient(
+    to bottom right,
+    var(--dragon-color) 50%,
+    var(--electric-color) 60%
+  );
+  border: 4mm ridge var(--dragon-color-full);
+}
+
+.Dragon-Feu {
+  background: linear-gradient(
+    to bottom right,
+    var(--dragon-color) 50%,
+    var(--fire-color) 60%
+  );
+  border: 4mm ridge var(--dragon-color-full);
+}
+
+.Dragon-Glace {
+  background: linear-gradient(
+    to bottom right,
+    var(--dragon-color) 50%,
+    var(--ice-color) 60%
+  );
+  border: 4mm ridge var(--dragon-color-full);
+}
+
+.Dragon-Eau {
+  background: linear-gradient(
+    to bottom right,
+    var(--dragon-color) 50%,
+    var(--water-color) 60%
+  );
+  border: 4mm ridge var(--dragon-color-full);
+}
+
+.Dragon-Combat {
+  background: linear-gradient(
+    to bottom right,
+    var(--dragon-color) 50%,
+    var(--fighting-color) 60%
+  );
+  border: 4mm ridge var(--dragon-color-full);
+}
+
+.Dragon-Normal {
+  background: linear-gradient(
+    to bottom right,
+    var(--dragon-color) 50%,
+    var(--normal-color) 60%
+  );
+  border: 4mm ridge var(--dragon-color-full);
+}
+
+.Dragon-Plante {
+  background: linear-gradient(
+    to bottom right,
+    var(--dragon-color) 50%,
+    var(--grass-color) 60%
+  );
+  border: 4mm ridge var(--dragon-color-full);
+}
+
+.Dragon-Poison {
+  background: linear-gradient(
+    to bottom right,
+    var(--dragon-color) 50%,
+    var(--poison-color) 60%
+  );
+  border: 4mm ridge var(--dragon-color-full);
+}
+
+.Dragon-Roche {
+  background: linear-gradient(
+    to bottom right,
+    var(--dragon-color) 50%,
+    var(--rock-color) 60%
+  );
+  border: 4mm ridge var(--dragon-color-full);
+}
+
+.Dragon-Psy {
+  background: linear-gradient(
+    to bottom right,
+    var(--dragon-color) 50%,
+    var(--psychic-color) 60%
+  );
+  border: 4mm ridge var(--dragon-color-full);
+}
+
+.Dragon-Sol {
+  background: linear-gradient(
+    to bottom right,
+    var(--dragon-color) 50%,
+    var(--ground-color) 60%
+  );
+  border: 4mm ridge var(--dragon-color-full);
+}
+
+.Dragon-Vol {
+  background: linear-gradient(
+    to bottom right,
+    var(--dragon-color) 50%,
+    var(--flying-color) 60%
+  );
+  border: 4mm ridge var(--dragon-color-full);
+}
+
+.Eau-Acier {
+  background: linear-gradient(
+    to bottom right,
+    var(--water-color) 50%,
+    var(--steel-color) 60%
+  );
+  border: 4mm ridge var(--water-color-full);
+}
+
+.Eau-Normal {
+  background: linear-gradient(
+    to bottom right,
+    var(--water-color) 50%,
+    var(--normal-color) 60%
+  );
+  border: 4mm ridge var(--water-color-full);
+}
+
+.Eau-Combat {
+  background: linear-gradient(
+    to bottom right,
+    var(--water-color) 50%,
+    var(--fighting-color) 60%
+  );
+  border: 4mm ridge var(--water-color-full);
+}
+
+.Eau-Feu {
+  background: linear-gradient(
+    to bottom right,
+    var(--water-color) 50%,
+    var(--fire-color) 60%
+  );
+  border: 4mm ridge var(--water-color-full);
+}
+
+.Eau-Insecte {
+  background: linear-gradient(
+    to bottom right,
+    var(--water-color) 50%,
+    var(--bug-color) 60%
+  );
+  border: 4mm ridge var(--water-color-full);
+}
+
+.Eau-Sol {
+  background: linear-gradient(
+    to bottom right,
+    var(--water-color) 50%,
+    var(--ground-color) 60%
+  );
+  border: 4mm ridge var(--water-color-full);
+}
+
+.Eau-Spectre {
+  background: linear-gradient(
+    to bottom right,
+    var(--water-color) 50%,
+    var(--ghost-color) 60%
+  );
+  border: 4mm ridge var(--water-color-full);
+}
+
+.Eau-Vol {
+  background: linear-gradient(
+    to bottom right,
+    var(--water-color) 50%,
+    var(--flying-color) 60%
+  );
+  border: 4mm ridge var(--water-color-full);
+}
+
+.Eau-Roche {
+  background: linear-gradient(
+    to bottom right,
+    var(--water-color) 50%,
+    var(--rock-color) 60%
+  );
+  border: 4mm ridge var(--water-color-full);
+}
+
+.Eau-Poison {
+  background: linear-gradient(
+    to bottom right,
+    var(--water-color) 50%,
+    var(--poison-color) 60%
+  );
+  border: 4mm ridge var(--water-color-full);
+}
+
+.Électrik-Acier {
+  background: linear-gradient(
+    to bottom right,
+    var(--electric-color) 50%,
+    var(--steel-color) 60%
+  );
+  border: 4mm ridge var(--electric-color-full);
+}
+
+.Électrik-Eau {
+  background: linear-gradient(
+    to bottom right,
+    var(--electric-color) 50%,
+    var(--water-color) 60%
+  );
+  border: 4mm ridge var(--electric-color-full);
+}
+
+.Électrik-Insecte {
+  background: linear-gradient(
+    to bottom right,
+    var(--electric-color) 50%,
+    var(--bug-color) 60%
+  );
+  border: 4mm ridge var(--electric-color-full);
+}
+
+.Électrik-Normal {
+  background: linear-gradient(
+    to bottom right,
+    var(--electric-color) 50%,
+    var(--normal-color) 60%
+  );
+  border: 4mm ridge var(--electric-color-full);
+}
+
+.Électrik-Poison {
+  background: linear-gradient(
+    to bottom right,
+    var(--electric-color) 50%,
+    var(--poison-color) 60%
+  );
+  border: 4mm ridge var(--electric-color-full);
+}
+
+.Électrik-Spectre {
+  background: linear-gradient(
+    to bottom right,
+    var(--electric-color) 50%,
+    var(--ghost-color) 60%
+  );
+  border: 4mm ridge var(--electric-color-full);
+}
+
+.Électrik-Sol {
+  background: linear-gradient(
+    to bottom right,
+    var(--electric-color) 50%,
+    var(--ground-color) 60%
+  );
+  border: 4mm ridge var(--electric-color-full);
+}
+
+.Électrik-Vol {
+  background: linear-gradient(
+    to bottom right,
+    var(--electric-color) 50%,
+    var(--flying-color) 60%
+  );
+  border: 4mm ridge var(--electric-color-full);
+}
+
+.Fée-Acier {
+  background: linear-gradient(
+    to bottom right,
+    var(--fairy-color) 50%,
+    var(--steel-color) 60%
+  );
+  border: 4mm ridge var(--fairy-color-full);
+}
+
+.Fée-Normal {
+  background: linear-gradient(
+    to bottom right,
+    var(--fairy-color) 50%,
+    var(--normal-color) 60%
+  );
+  border: 4mm ridge var(--fairy-color-full);
+}
+
+.Fée-Spectre {
+  background: linear-gradient(
+    to bottom right,
+    var(--fairy-color) 50%,
+    var(--ghost-color) 60%
+  );
+  border: 4mm ridge var(--fairy-color-full);
+}
+
+.Fée-Plante {
+  background: linear-gradient(
+    to bottom right,
+    var(--fairy-color) 50%,
+    var(--grass-color) 60%
+  );
+  border: 4mm ridge var(--fairy-color-full);
+}
+
+.Fée-Ténèbres {
+  background: linear-gradient(
+    to bottom right,
+    var(--fairy-color) 50%,
+    var(--dark-color) 60%
+  );
+  border: 4mm ridge var(--fairy-color-full);
+}
+
+.Fée-Vol {
+  background: linear-gradient(
+    to bottom right,
+    var(--fairy-color) 50%,
+    var(--flying-color) 60%
+  );
+  border: 4mm ridge var(--fairy-color-full);
+}
+
+.Fée-Roche {
+  background: linear-gradient(
+    to bottom right,
+    var(--fairy-color) 50%,
+    var(--rock-color) 60%
+  );
+  border: 4mm ridge var(--fairy-color-full);
+}
+
+.Fée-Insecte {
+  background: linear-gradient(
+    to bottom right,
+    var(--fairy-color) 50%,
+    var(--bug-color) 60%
+  );
+  border: 4mm ridge var(--fairy-color-full);
+}
+
+.Fée-Électrik {
+  background: linear-gradient(
+    to bottom right,
+    var(--fairy-color) 50%,
+    var(--electric-color) 60%
+  );
+  border: 4mm ridge var(--fairy-color-full);
+}
+
+.Fée-Eau {
+  background: linear-gradient(
+    to bottom right,
+    var(--fairy-color) 50%,
+    var(--water-color) 60%
+  );
+  border: 4mm ridge var(--fairy-color-full);
+}
+
+.Fée-Psy {
+  background: linear-gradient(
+    to bottom right,
+    var(--fairy-color) 50%,
+    var(--psychic-color) 60%
+  );
+  border: 4mm ridge var(--fairy-color-full);
+}
+
+.Feu-Acier {
+  background: linear-gradient(
+    to bottom right,
+    var(--fire-color) 50%,
+    var(--steel-color) 60%
+  );
+  border: 4mm ridge var(--fire-color-full);
+}
+
+.Feu-Insecte {
+  background: linear-gradient(
+    to bottom right,
+    var(--fire-color) 50%,
+    var(--bug-color) 60%
+  );
+  border: 4mm ridge var(--fire-color-full);
+}
+
+.Feu-Combat {
+  background: linear-gradient(
+    to bottom right,
+    var(--fire-color) 50%,
+    var(--fighting-color) 60%
+  );
+  border: 4mm ridge var(--fire-color-full);
+}
+
+.Feu-Normal {
+  background: linear-gradient(
+    to bottom right,
+    var(--fire-color) 50%,
+    var(--normal-color) 60%
+  );
+  border: 4mm ridge var(--fire-color-full);
+}
+
+.Feu-Poison {
+  background: linear-gradient(
+    to bottom right,
+    var(--fire-color) 50%,
+    var(--poison-color) 60%
+  );
+  border: 4mm ridge var(--fire-color-full);
+}
+
+.Feu-Spectre {
+  background: linear-gradient(
+    to bottom right,
+    var(--fire-color) 50%,
+    var(--ghost-color) 60%
+  );
+  border: 4mm ridge var(--fire-color-full);
+}
+
+.Feu-Roche {
+  background: linear-gradient(
+    to bottom right,
+    var(--fire-color) 50%,
+    var(--rock-color) 60%
+  );
+  border: 4mm ridge var(--fire-color-full);
+}
+
+.Feu-Vol {
+  background: linear-gradient(
+    to bottom right,
+    var(--fire-color) 50%,
+    var(--flying-color) 60%
+  );
+  border: 4mm ridge var(--fire-color-full);
+}
+
+.Feu-Sol {
+  background: linear-gradient(
+    to bottom right,
+    var(--fire-color) 50%,
+    var(--ground-color) 60%
+  );
+  border: 4mm ridge var(--fire-color-full);
+}
+
+.Glace-Eau {
+  background: linear-gradient(
+    to bottom right,
+    var(--ice-color) 50%,
+    var(--water-color) 60%
+  );
+  border: 4mm ridge var(--ice-color-full);
+}
+
+.Glace-Combat {
+  background: linear-gradient(
+    to bottom right,
+    var(--ice-color) 50%,
+    var(--fighting-color) 60%
+  );
+  border: 4mm ridge var(--ice-color-full);
+}
+
+.Glace-Insecte {
+  background: linear-gradient(
+    to bottom right,
+    var(--ice-color) 50%,
+    var(--bug-color) 60%
+  );
+  border: 4mm ridge var(--ice-color-full);
+}
+
+.Glace-Électrik {
+  background: linear-gradient(
+    to bottom right,
+    var(--ice-color) 50%,
+    var(--electric-color) 60%
+  );
+  border: 4mm ridge var(--ice-color-full);
+}
+
+.Glace-Roche {
+  background: linear-gradient(
+    to bottom right,
+    var(--ice-color) 50%,
+    var(--rock-color) 60%
+  );
+  border: 4mm ridge var(--ice-color-full);
+}
+
+.Glace-Psy {
+  background: linear-gradient(
+    to bottom right,
+    var(--ice-color) 50%,
+    var(--psychic-color) 60%
+  );
+  border: 4mm ridge var(--ice-color-full);
+}
+
+.Glace-Plante {
+  background: linear-gradient(
+    to bottom right,
+    var(--ice-color) 50%,
+    var(--grass-color) 60%
+  );
+  border: 4mm ridge var(--ice-color-full);
+}
+
+.Glace-Spectre {
+  background: linear-gradient(
+    to bottom right,
+    var(--ice-color) 50%,
+    var(--ghost-color) 60%
+  );
+  border: 4mm ridge var(--ice-color-full);
+}
+
+.Glace-Sol {
+  background: linear-gradient(
+    to bottom right,
+    var(--ice-color) 50%,
+    var(--ground-color) 60%
+  );
+  border: 4mm ridge var(--ice-color-full);
+}
+
+.Glace-Vol {
+  background: linear-gradient(
+    to bottom right,
+    var(--ice-color) 50%,
+    var(--flying-color) 60%
+  );
+  border: 4mm ridge var(--ice-color-full);
+}
+
+.Insecte-Roche {
+  background: linear-gradient(
+    to bottom right,
+    var(--bug-color) 50%,
+    var(--rock-color) 60%
+  );
+  border: 4mm ridge var(--bug-color-full);
+}
+
+.Insecte-Combat {
+  background: linear-gradient(
+    to bottom right,
+    var(--bug-color) 50%,
+    var(--fighting-color) 60%
+  );
+  border: 4mm ridge var(--bug-color-full);
+}
+
+.Insecte-Sol {
+  background: linear-gradient(
+    to bottom right,
+    var(--bug-color) 50%,
+    var(--ground-color) 60%
+  );
+  border: 4mm ridge var(--bug-color-full);
+}
+
+.Insecte-Vol {
+  background: linear-gradient(
+    to bottom right,
+    var(--bug-color) 50%,
+    var(--flying-color) 60%
+  );
+  border: 4mm ridge var(--bug-color-full);
+}
+
+.Insecte-Poison {
+  background: linear-gradient(
+    to bottom right,
+    var(--bug-color) 50%,
+    var(--poison-color) 60%
+  );
+  border: 4mm ridge var(--bug-color-full);
+}
+
+.Plante-Combat {
+  background: linear-gradient(
+    to bottom right,
+    var(--grass-color) 50%,
+    var(--fighting-color) 60%
+  );
+  border: 4mm ridge var(--grass-color-full);
+}
+
+.Plante-Poison {
+  background: linear-gradient(
+    to bottom right,
+    var(--grass-color) 50%,
+    var(--poison-color) 60%
+  );
+  border: 4mm ridge var(--grass-color-full);
+}
+
+.Plante-Sol {
+  background: linear-gradient(
+    to bottom right,
+    var(--grass-color) 50%,
+    var(--ground-color) 60%
+  );
+  border: 4mm ridge var(--grass-color-full);
+}
+
+.Plante-Vol {
+  background: linear-gradient(
+    to bottom right,
+    var(--grass-color) 50%,
+    var(--flying-color) 60%
+  );
+  border: 4mm ridge var(--grass-color-full);
+}
+
+.Plante-Acier {
+  background: linear-gradient(
+    to bottom right,
+    var(--grass-color) 50%,
+    var(--steel-color) 60%
+  );
+  border: 4mm ridge var(--grass-color-full);
+}
+
+.Plante-Eau {
+  background: linear-gradient(
+    to bottom right,
+    var(--grass-color) 50%,
+    var(--water-color) 60%
+  );
+  border: 4mm ridge var(--grass-color-full);
+}
+
+.Plante-Normal {
+  background: linear-gradient(
+    to bottom right,
+    var(--grass-color) 50%,
+    var(--normal-color) 60%
+  );
+  border: 4mm ridge var(--grass-color-full);
+}
+
+.Plante-Insecte {
+  background: linear-gradient(
+    to bottom right,
+    var(--grass-color) 50%,
+    var(--bug-color) 60%
+  );
+  border: 4mm ridge var(--grass-color-full);
+}
+
+.Plante-Spectre {
+  background: linear-gradient(
+    to bottom right,
+    var(--grass-color) 50%,
+    var(--ghost-color) 60%
+  );
+  border: 4mm ridge var(--grass-color-full);
+}
+
+.Plante-Roche {
+  background: linear-gradient(
+    to bottom right,
+    var(--grass-color) 50%,
+    var(--rock-color) 60%
+  );
+  border: 4mm ridge var(--grass-color-full);
+}
+
+.Poison-Combat {
+  background: linear-gradient(
+    to bottom right,
+    var(--poison-color) 50%,
+    var(--fighting-color) 60%
+  );
+  border: 4mm ridge var(--poison-color-full);
+}
+
+.Poison-Vol {
+  background: linear-gradient(
+    to bottom right,
+    var(--poison-color) 50%,
+    var(--flying-color) 60%
+  );
+  border: 4mm ridge var(--poison-color-full);
+}
+
+.Psy-Acier {
+  background: linear-gradient(
+    to bottom right,
+    var(--psychic-color) 50%,
+    var(--steel-color) 60%
+  );
+  border: 4mm ridge var(--psychic-color-full);
+}
+
+.Psy-Combat {
+  background: linear-gradient(
+    to bottom right,
+    var(--psychic-color) 50%,
+    var(--fighting-color) 60%
+  );
+  border: 4mm ridge var(--psychic-color-full);
+}
+
+.Psy-Eau {
+  background: linear-gradient(
+    to bottom right,
+    var(--psychic-color) 50%,
+    var(--water-color) 60%
+  );
+  border: 4mm ridge var(--psychic-color-full);
+}
+
+.Psy-Feu {
+  background: linear-gradient(
+    to bottom right,
+    var(--psychic-color) 50%,
+    var(--fire-color) 60%
+  );
+  border: 4mm ridge var(--psychic-color-full);
+}
+
+.Psy-Roche {
+  background: linear-gradient(
+    to bottom right,
+    var(--psychic-color) 50%,
+    var(--rock-color) 60%
+  );
+  border: 4mm ridge var(--psychic-color-full);
+}
+
+.Psy-Spectre {
+  background: linear-gradient(
+    to bottom right,
+    var(--psychic-color) 50%,
+    var(--ghost-color) 60%
+  );
+  border: 4mm ridge var(--psychic-color-full);
+}
+
+.Psy-Sol {
+  background: linear-gradient(
+    to bottom right,
+    var(--psychic-color) 50%,
+    var(--ground-color) 60%
+  );
+  border: 4mm ridge var(--psychic-color-full);
+}
+
+.Psy-Vol {
+  background: linear-gradient(
+    to bottom right,
+    var(--psychic-color) 50%,
+    var(--flying-color) 60%
+  );
+  border: 4mm ridge var(--psychic-color-full);
+}
+
+.Psy-Insecte {
+  background: linear-gradient(
+    to bottom right,
+    var(--psychic-color) 50%,
+    var(--bug-color) 60%
+  );
+  border: 4mm ridge var(--psychic-color-full);
+}
+
+.Psy-Normal {
+  background: linear-gradient(
+    to bottom right,
+    var(--psychic-color) 50%,
+    var(--normal-color) 60%
+  );
+  border: 4mm ridge var(--psychic-color-full);
+}
+
+.Psy-Plante {
+  background: linear-gradient(
+    to bottom right,
+    var(--psychic-color) 50%,
+    var(--grass-color) 60%
+  );
+  border: 4mm ridge var(--psychic-color-full);
+}
+
+.Roche-Combat {
+  background: linear-gradient(
+    to bottom right,
+    var(--rock-color) 50%,
+    var(--fighting-color) 60%
+  );
+  border: 4mm ridge var(--rock-color-full);
+}
+
+.Roche-Poison {
+  background: linear-gradient(
+    to bottom right,
+    var(--rock-color) 50%,
+    var(--poison-color) 60%
+  );
+  border: 4mm ridge var(--rock-color-full);
+}
+
+.Roche-Sol {
+  background: linear-gradient(
+    to bottom right,
+    var(--rock-color) 50%,
+    var(--ground-color) 60%
+  );
+  border: 4mm ridge var(--rock-color-full);
+}
+
+.Roche-Vol {
+  background: linear-gradient(
+    to bottom right,
+    var(--rock-color) 50%,
+    var(--flying-color) 60%
+  );
+  border: 4mm ridge var(--rock-color-full);
+}
+
+.Sol-Normal {
+  background: linear-gradient(
+    to bottom right,
+    var(--ground-color) 50%,
+    var(--normal-color) 60%
+  );
+  border: 4mm ridge var(--ground-color-full);
+}
+
+.Sol-Vol {
+  background: linear-gradient(
+    to bottom right,
+    var(--ground-color) 50%,
+    var(--flying-color) 60%
+  );
+  border: 4mm ridge var(--ground-color-full);
+}
+
+.Sol-Poison {
+  background: linear-gradient(
+    to bottom right,
+    var(--ground-color) 50%,
+    var(--poison-color) 60%
+  );
+  border: 4mm ridge var(--ground-color-full);
+}
+
+.Spectre-Combat {
+  background: linear-gradient(
+    to bottom right,
+    var(--ghost-color) 50%,
+    var(--fighting-color) 60%
+  );
+  border: 4mm ridge var(--ghost-color-full);
+}
+
+.Spectre-Insecte {
+  background: linear-gradient(
+    to bottom right,
+    var(--ghost-color) 50%,
+    var(--bug-color) 60%
+  );
+  border: 4mm ridge var(--ghost-color-full);
+}
+
+.Spectre-Poison {
+  background: linear-gradient(
+    to bottom right,
+    var(--ghost-color) 50%,
+    var(--poison-color) 60%
+  );
+  border: 4mm ridge var(--ghost-color-full);
+}
+
+.Spectre-Sol {
+  background: linear-gradient(
+    to bottom right,
+    var(--ghost-color) 50%,
+    var(--ground-color) 60%
+  );
+  border: 4mm ridge var(--ghost-color-full);
+}
+
+.Spectre-Vol {
+  background: linear-gradient(
+    to bottom right,
+    var(--ghost-color) 50%,
+    var(--flying-color) 60%
+  );
+  border: 4mm ridge var(--ghost-color-full);
+}
+
+.Ténèbres-Acier {
+  background: linear-gradient(
+    to bottom right,
+    var(--dark-color) 50%,
+    var(--steel-color) 60%
+  );
+  border: 4mm ridge var(--dark-color-full);
+}
+
+.Ténèbres-Dragon {
+  background: linear-gradient(
+    to bottom right,
+    var(--dark-color) 50%,
+    var(--dragon-color) 60%
+  );
+  border: 4mm ridge var(--dark-color-full);
+}
+
+.Ténèbres-Glace {
+  background: linear-gradient(
+    to bottom right,
+    var(--dark-color) 50%,
+    var(--ice-color) 60%
+  );
+  border: 4mm ridge var(--dark-color-full);
+}
+
+.Ténèbres-Eau {
+  background: linear-gradient(
+    to bottom right,
+    var(--dark-color) 50%,
+    var(--water-color) 60%
+  );
+  border: 4mm ridge var(--dark-color-full);
+}
+
+.Ténèbres-Feu {
+  background: linear-gradient(
+    to bottom right,
+    var(--dark-color) 50%,
+    var(--fire-color) 60%
+  );
+  border: 4mm ridge var(--dark-color-full);
+}
+
+.Ténèbres-Poison {
+  background: linear-gradient(
+    to bottom right,
+    var(--dark-color) 50%,
+    var(--poison-color) 60%
+  );
+  border: 4mm ridge var(--dark-color-full);
+}
+
+.Ténèbres-Spectre {
+  background: linear-gradient(
+    to bottom right,
+    var(--dark-color) 50%,
+    var(--ghost-color) 60%
+  );
+  border: 4mm ridge var(--dark-color-full);
+}
+
+.Ténèbres-Roche {
+  background: linear-gradient(
+    to bottom right,
+    var(--dark-color) 50%,
+    var(--rock-color) 60%
+  );
+  border: 4mm ridge var(--dark-color-full);
+}
+
+.Ténèbres-Psy {
+  background: linear-gradient(
+    to bottom right,
+    var(--dark-color) 50%,
+    var(--psychic-color) 60%
+  );
+  border: 4mm ridge var(--dark-color-full);
+}
+
+.Ténèbres-Plante {
+  background: linear-gradient(
+    to bottom right,
+    var(--dark-color) 50%,
+    var(--grass-color) 60%
+  );
+  border: 4mm ridge var(--dark-color-full);
+}
+
+.Ténèbres-Combat {
+  background: linear-gradient(
+    to bottom right,
+    var(--dark-color) 50%,
+    var(--fighting-color) 60%
+  );
+  border: 4mm ridge var(--dark-color-full);
+}
+
+.Ténèbres-Électrik {
+  background: linear-gradient(
+    to bottom right,
+    var(--dark-color) 50%,
+    var(--electric-color) 60%
+  );
+  border: 4mm ridge var(--dark-color-full);
+}
+
+.Ténèbres-Normal {
+  background: linear-gradient(
+    to bottom right,
+    var(--dark-color) 50%,
+    var(--normal-color) 60%
+  );
+  border: 4mm ridge var(--dark-color-full);
+}
+
+.Ténèbres-Sol {
+  background: linear-gradient(
+    to bottom right,
+    var(--dark-color) 50%,
+    var(--ground-color) 60%
+  );
+  border: 4mm ridge var(--dark-color-full);
+}
+
+.Ténèbres-Vol {
+  background: linear-gradient(
+    to bottom right,
+    var(--dark-color) 50%,
+    var(--flying-color) 60%
+  );
+  border: 4mm ridge var(--dark-color-full);
+}
+
+.Vol-Combat {
+  background: linear-gradient(
+    to bottom right,
+    var(--flying-color) 50%,
+    var(--fighting-color) 60%
+  );
+  border: 4mm ridge var(--flying-color-full);
+}
+
+.Vol-Normal {
+  background: linear-gradient(
+    to bottom right,
+    var(--flying-color) 50%,
+    var(--normal-color) 60%
+  );
+  border: 4mm ridge var(--flying-color-full);
+}

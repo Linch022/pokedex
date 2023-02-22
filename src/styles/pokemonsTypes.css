@@ -1,5 +1,6 @@
 .types-list {
   display: flex;
+  flex-direction: row-reverse;
 }
 .type {
   margin: 0 10px 0 10px;
@@ -7,54 +8,57 @@
   border: 1px solid black;
 }
 
-.flying {
-  background-color: var(--flying-color);
+.Vol-type {
+  background-color: var(--flying-color-full);
 }
-.fire {
-  background-color: var(--fire-color);
+.Feu-type {
+  background-color: var(--fire-color-full);
 }
-.grass {
-  background-color: var(--grass-color);
+.Plante-type {
+  background-color: var(--grass-color-full);
 }
-.poison {
-  background-color: var(--poison-color);
+.Poison-type {
+  background-color: var(--poison-color-full);
 }
-.water {
-  background-color: var(--water-color);
+.Eau-type {
+  background-color: var(--water-color-full);
 }
-.bug {
-  background-color: var(--bug-color);
+.Insecte-type {
+  background-color: var(--bug-color-full);
 }
-.normal {
-  background-color: var(--normal-color);
+.Normal-type {
+  background-color: var(--normal-color-full);
 }
-.electric {
-  background-color: var(--electric-color);
+.Électrik-type {
+  background-color: var(--electric-color-full);
 }
-.ground {
-  background-color: var(--ground-color);
+.Sol-type {
+  background-color: var(--ground-color-full);
 }
-.fairy {
-  background-color: var(--fairy-color);
+.Fée-type {
+  background-color: var(--fairy-color-full);
 }
-.fighting {
-  background-color: var(--fighting-color);
+.Combat-type {
+  background-color: var(--fighting-color-full);
 }
-.psychic {
-  background-color: var(--psychic-color);
+.Psy-type {
+  background-color: var(--psychic-color-full);
 }
-.rock {
-  background-color: var(--rock-color);
+.Roche-type {
+  background-color: var(--rock-color-full);
 }
-.ice {
-  background-color: var(--ice-color);
+.Glace-type {
+  background-color: var(--ice-color-full);
 }
-.dragon {
-  background-color: var(--dragon-color);
+.Dragon-type {
+  background-color: var(--dragon-color-full);
 }
-.steel {
-  background-color: var(--steel-color);
+.Acier-type {
+  background-color: var(--steel-color-full);
 }
-.ghost {
-  background-color: var(--ghost-color);
+.Spectre-type {
+  background-color: var(--ghost-color-full);
+}
+.Ténèbres-type {
+  background-color: var(--dark-color-full);
 }

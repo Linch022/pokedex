@@ -6,7 +6,7 @@
   --background-color: #f5f4f4;
   --main-font: 'Silkscreen', cursive;
   --fire-color: rgb(230, 34, 36, 0.75);
-  --flying-color: rgba(130, 187, 240, 0.75);
+  --flying-color: rgb(130, 187, 240, 0.75);
   --grass-color: rgb(61, 162, 37, 0.75);
   --poison-color: rgb(147, 63, 205, 0.75);
   --water-color: rgb(35, 129, 240, 0.75);
@@ -22,6 +22,26 @@
   --dragon-color: rgb(79, 96, 226, 0.75);
   --steel-color: rgb(94, 162, 186, 0.75);
   --ghost-color: rgb(113, 62, 112, 0.75);
+  --dark-color: rgb(79, 62, 60, 0.75);
+
+  --fire-color-full: rgb(230, 34, 36, 1);
+  --flying-color-full: rgb(130, 187, 240, 1);
+  --grass-color-full: rgb(61, 162, 37, 1);
+  --poison-color-full: rgb(147, 63, 205, 1);
+  --water-color-full: rgb(35, 129, 240, 1);
+  --bug-color-full: rgb(147, 163, 18, 1);
+  --normal-color-full: rgb(160, 162, 160, 1);
+  --electric-color-full: rgb(251, 195, 0, 1);
+  --ground-color-full: rgb(146, 81, 29, 1);
+  --fairy-color-full: rgb(241, 112, 239, 1);
+  --fighting-color-full: rgb(255, 129, 0, 1);
+  --psychic-color-full: rgb(241, 62, 122, 1);
+  --rock-color-full: rgb(176, 171, 129, 1);
+  --ice-color-full: rgb(61, 216, 254, 1);
+  --dragon-color-full: rgb(79, 96, 226, 1);
+  --steel-color-full: rgb(94, 162, 186, 1);
+  --ghost-color-full: rgb(113, 62, 112, 1);
+  --dark-color-full: rgb(79, 62, 60, 1);
 }
 
 * {
@@ -34,4 +54,11 @@
 
 .app {
   background-color: var(--background-color);
+}
+
+.pokemon-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto 0 auto;
 }

@@ -4,10 +4,16 @@ import PokemonsTypesList from './PokemonsTypesList';
 
 const PokemonCard = ({ pokemon }) => {
   return (
-    <div className={`pokemon-card ${pokemon.types[0].type.name}-img`}>
+    <div
+      className={`pokemon-card ${
+        pokemon.apiTypes.length === 2
+          ? pokemon.apiTypes[1].name + '-' + pokemon.apiTypes[0].name
+          : pokemon.apiTypes[0].name
+      }`}
+    >
       <div className='text-card'>
         <h2>{pokemon.name}</h2>
-        <PokemonsTypesList data={pokemon.types} />
+        <PokemonsTypesList data={pokemon.apiTypes} />
       </div>
       <ImgPokemon data={pokemon} />
     </div>
