@@ -2,7 +2,7 @@ import React from 'react';
 import PokemonsTypesList from './PokemonsTypesList';
 
 const PokemonCard = ({ pokemon }) => {
-  return (
+  return pokemon ? (
     <div
       className={`pokemon-card ${
         pokemon.apiTypes.length === 2
@@ -22,7 +22,7 @@ const PokemonCard = ({ pokemon }) => {
         />
       </div>
     </div>
-  );
+  ) : null;
 };
 
 export default PokemonCard;

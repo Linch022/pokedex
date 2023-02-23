@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
+import PokemonCard from './PokemonCard';
 import PokemonsTypesList from './PokemonsTypesList';
 
 const PokemonDetails = () => {
@@ -21,7 +22,6 @@ const PokemonDetails = () => {
   const getEvolution = (pokemon) => {
     if (pokemon.apiEvolutions && pokemon.apiEvolutions.length === 1) {
       const name = pokemon.apiEvolutions[0].name;
-      console.log(pokemon);
       const urlApiEvolution = `https://pokebuildapi.fr/api/v1/pokemon/${name}`;
       const fetchData = async () => {
         const { data } = await axios.get(urlApiEvolution);
@@ -30,16 +30,14 @@ const PokemonDetails = () => {
       fetchData();
     } else if (pokemon.apiEvolutions && pokemon.apiEvolutions.length > 1) {
       const evolutionsData = [];
+      const length = pokemon.apiEvolutions.length;
       pokemon.apiEvolutions.forEach((evolution) => {
         const name = evolution.name;
         const urlApiEvolution = `https://pokebuildapi.fr/api/v1/pokemon/${name}`;
-        console.log(urlApiEvolution);
         const fetchData = async () => {
           const { data } = await axios.get(urlApiEvolution);
           evolutionsData.push(data);
-          console.log(data);
-          console.log(name);
-          if (evolutionsData.length === pokemon.apiEvolutions) {
+          if (evolutionsData.length === length) {
             setEvolution(evolutionsData);
           }
         };
@@ -49,7 +47,7 @@ const PokemonDetails = () => {
   };
 
   const getPreEvolution = (data) => {
-    if (data.apiPreEvolution !== 'none') {
+    if (data.apiPreEvolution && data.apiPreEvolution !== 'none') {
       const name = data.apiPreEvolution.name;
       const urlApiPreEvolution = `https://pokebuildapi.fr/api/v1/pokemon/${name}`;
       const fetchData = async () => {
@@ -67,6 +65,10 @@ const PokemonDetails = () => {
     };
     fetchData();
   }, [urlApi]);
+
+  const resetData = () => {
+    setEvolution([]);
+  };
   return (
     <div className='pokemon-details-container'>
       {pokemonData ? (
@@ -116,22 +118,30 @@ const PokemonDetails = () => {
               />
             </div>
           </div>
-          {preEvolution ? (
+          {preEvolution && preEvolution.name !== pokemonData.name ? (
             <div className='pre-evolution'>
-              <h1>{preEvolution.name}</h1>
+              <Link key={preEvolution.id} to={`/pokemon/${preEvolution.name}`}>
+                <PokemonCard key={preEvolution.id} pokemon={preEvolution} />
+              </Link>
             </div>
           ) : null}
-          {evolution ? (
+          {evolution && evolution.name !== pokemonData.name ? (
             <div className='evolutions'>
               {Array.isArray(evolution) ? (
                 evolution.map((pokemon) => (
-                  <div key={pokemon.name} className='evolution'>
-                    <h1>{pokemon.name}</h1>
-                  </div>
+                  <Link
+                    key={pokemon.id}
+                    to={`/pokemon/${pokemon.name}`}
+                    onClick={resetData}
+                  >
+                    <PokemonCard key={pokemon.id} pokemon={pokemon} />
+                  </Link>
                 ))
               ) : (
                 <div className='evolution'>
-                  <h1>{evolution.name}</h1>
+                  <Link key={evolution.id} to={`/pokemon/${evolution.name}`}>
+                    <PokemonCard key={evolution.id} pokemon={evolution} />
+                  </Link>
                 </div>
               )}
             </div>

@@ -9,18 +9,9 @@ const DisplayPokemon = () => {
     `https://pokebuildapi.fr/api/v1/pokemon/${choice}`
   );
   const [pokemonData, setPokemonData] = useState([]);
-  const [searchValue, setSearchValue] = useState(``);
+  const [searchValue, setSearchValue] = useState('');
   // const [isloaded, setIsLoaded] = useState(false);
 
-  const handleInputChange = (e) => {
-    setSearchValue(e.target.value);
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // setChoice(searchValue);
-    console.log(searchValue);
-  };
   useEffect(() => {
     const fetchData = async () => {
       const { data } = await axios.get(apiUrl);
@@ -33,19 +24,23 @@ const DisplayPokemon = () => {
     setApiUrl(`https://pokebuildapi.fr/api/v1/pokemon/${choice}`);
   }, [choice]);
 
+  const handleInputChange = (e) => {
+    setSearchValue(e.target.value);
+  };
+
   return (
     <div className='pokemon-display-container'>
       <div className='search-option-container'>
         <div className='search-input'>
           <label>
-            Recherche par nom ou numéro :
+            Recherche par nom ou numéro:
             <input
               type='text'
+              placeholder='Bonjour'
               value={searchValue}
               onChange={handleInputChange}
             />
           </label>
-          <button onClick={handleSubmit}>rechercher</button>
         </div>
         <div className='generation-button-container'>
           <button
@@ -136,11 +131,15 @@ const DisplayPokemon = () => {
           ? // pokemonData.length === 1 ? (
             //   <PokemonCard key={pokemonData.id} pokemon={pokemonData} />
             // ) : (
-            pokemonData.map((pokemon) => (
-              <Link key={pokemon.id} to={`/pokemon/${pokemon.name}`}>
-                <PokemonCard key={pokemon.id} pokemon={pokemon} />
-              </Link>
-            ))
+            pokemonData
+              .filter((pokemon) =>
+                pokemon.name.toLowerCase().includes(searchValue.toLowerCase())
+              )
+              .map((pokemon) => (
+                <Link key={pokemon.id} to={`/pokemon/${pokemon.name}`}>
+                  <PokemonCard key={pokemon.id} pokemon={pokemon} />
+                </Link>
+              ))
           : // )
             null}
       </div>
