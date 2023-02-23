@@ -1,5 +1,4 @@
 import React from 'react';
-import ImgPokemon from './ImgPokemon';
 import PokemonsTypesList from './PokemonsTypesList';
 
 const PokemonCard = ({ pokemon }) => {
@@ -15,7 +14,13 @@ const PokemonCard = ({ pokemon }) => {
         <h2>{pokemon.name}</h2>
         <PokemonsTypesList data={pokemon.apiTypes} />
       </div>
-      <ImgPokemon data={pokemon} />
+      <div>
+        <img
+          className={`image-pokemon`}
+          src={pokemon.image}
+          alt={pokemon.name}
+        />
+      </div>
     </div>
   );
 };

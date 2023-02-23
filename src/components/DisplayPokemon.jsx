@@ -1,140 +1,148 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import PokemonCard from './PokemonCard';
 
 const DisplayPokemon = () => {
-  const [choice, setChoice] = useState('/generation/1');
-  const [apiUrl, setApiUrl] = useState(`https://pokeapi.co/api/v2${choice}`);
-  const [pokemonsNames, setPokemonsNames] = useState([]);
-  const [pokemonsUrls, setPokemonsUrls] = useState([]);
+  const [choice, setChoice] = useState('generation/1');
+  const [apiUrl, setApiUrl] = useState(
+    `https://pokebuildapi.fr/api/v1/pokemon/${choice}`
+  );
   const [pokemonData, setPokemonData] = useState([]);
-  const [isloaded, setIsLoaded] = useState(false);
+  const [searchValue, setSearchValue] = useState(``);
+  // const [isloaded, setIsLoaded] = useState(false);
 
+  const handleInputChange = (e) => {
+    setSearchValue(e.target.value);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // setChoice(searchValue);
+    console.log(searchValue);
+  };
   useEffect(() => {
     const fetchData = async () => {
       const { data } = await axios.get(apiUrl);
-      const names = data.pokemon_species.map((pokemon) => pokemon.name);
-      setPokemonsNames(names);
+      setPokemonData(data);
     };
     fetchData();
   }, [apiUrl]);
 
   useEffect(() => {
-    if (pokemonsNames.length === 151) {
-      setIsLoaded(true);
-    }
-  }, [pokemonsNames]);
-
-  useEffect(() => {
-    const setUrls = pokemonsNames.map(
-      (name) => `https://pokeapi.co/api/v2/pokemon/${name}`
-    );
-    setIsLoaded(false);
-    setPokemonsUrls(setUrls);
-  }, [isloaded, pokemonsNames]);
-
-  useEffect(() => {
-    const getPokemonData = pokemonsUrls.map((url) => axios.get(url));
-    let pokemonDataArray = [];
-    getPokemonData.forEach((promise) => {
-      promise
-        .then((response) => {
-          pokemonDataArray.push(response.data);
-          const sortedData = pokemonDataArray.sort((a, b) => a.id - b.id);
-          setPokemonData(sortedData);
-        })
-        .catch((error) => {
-          console.log(error);
-        });
-    });
-  }, [pokemonsUrls]);
-
-  useEffect(() => {
-    setApiUrl(`https://pokeapi.co/api/v2${choice}`);
+    setApiUrl(`https://pokebuildapi.fr/api/v1/pokemon/${choice}`);
   }, [choice]);
 
   return (
-    <div>
-      <div className='generation-button-container'>
-        <button
-          type='button'
-          onClick={() => {
-            setChoice('/generation/1');
-          }}
-        >
-          Génération 1
-        </button>
-        <button
-          type='button'
-          onClick={() => {
-            setChoice('/generation/2');
-          }}
-        >
-          Génération 2
-        </button>
-        <button
-          type='button'
-          onClick={() => {
-            setChoice('/generation/3');
-          }}
-        >
-          Génération 3
-        </button>
-        <button
-          type='button'
-          onClick={() => {
-            setChoice('/generation/4');
-          }}
-        >
-          Génération 4
-        </button>
-        <button
-          type='button'
-          onClick={() => {
-            setChoice('/generation/5');
-          }}
-        >
-          Génération 5
-        </button>
-        <button
-          type='button'
-          onClick={() => {
-            setChoice('/generation/6');
-          }}
-        >
-          Génération 6
-        </button>
-        <button
-          type='button'
-          onClick={() => {
-            setChoice('/generation/7');
-          }}
-        >
-          Génération 7
-        </button>
-        <button
-          type='button'
-          onClick={() => {
-            setChoice('/generation/8');
-          }}
-        >
-          Génération 8
-        </button>
-        <button
-          type='button'
-          onClick={() => {
-            setChoice('/generation/9');
-          }}
-        >
-          Génération 9
-        </button>
+    <div className='pokemon-display-container'>
+      <div className='search-option-container'>
+        <div className='search-input'>
+          <label>
+            Recherche par nom ou numéro :
+            <input
+              type='text'
+              value={searchValue}
+              onChange={handleInputChange}
+            />
+          </label>
+          <button onClick={handleSubmit}>rechercher</button>
+        </div>
+        <div className='generation-button-container'>
+          <button
+            className='generation-button'
+            type='button'
+            onClick={() => {
+              setChoice('/generation/1');
+            }}
+          >
+            Gen 1
+          </button>
+          <button
+            className='generation-button'
+            type='button'
+            onClick={() => {
+              setChoice('generation/2');
+            }}
+          >
+            Gen 2
+          </button>
+          <button
+            className='generation-button'
+            type='button'
+            onClick={() => {
+              setChoice('generation/3');
+            }}
+          >
+            Gen 3
+          </button>
+          <button
+            className='generation-button'
+            type='button'
+            onClick={() => {
+              setChoice('generation/4');
+            }}
+          >
+            Gen 4
+          </button>
+          <button
+            className='generation-button'
+            type='button'
+            onClick={() => {
+              setChoice('generation/5');
+            }}
+          >
+            Gen 5
+          </button>
+          <button
+            className='generation-button'
+            type='button'
+            onClick={() => {
+              setChoice('generation/6');
+            }}
+          >
+            Gen 6
+          </button>
+          <button
+            className='generation-button'
+            type='button'
+            onClick={() => {
+              setChoice('generation/7');
+            }}
+          >
+            Gen 7
+          </button>
+          <button
+            className='generation-button'
+            type='button'
+            onClick={() => {
+              setChoice('generation/8');
+            }}
+          >
+            Gen 8
+          </button>
+          <button
+            className='generation-button'
+            type='button'
+            onClick={() => {
+              setChoice('');
+            }}
+          >
+            all gen
+          </button>
+        </div>
       </div>
       <div className='pokemon-card-container'>
         {pokemonData
-          ? pokemonData.map((pokemon) => (
-              <PokemonCard key={pokemon.id} pokemon={pokemon} />
+          ? // pokemonData.length === 1 ? (
+            //   <PokemonCard key={pokemonData.id} pokemon={pokemonData} />
+            // ) : (
+            pokemonData.map((pokemon) => (
+              <Link key={pokemon.id} to={`/pokemon/${pokemon.name}`}>
+                <PokemonCard key={pokemon.id} pokemon={pokemon} />
+              </Link>
             ))
-          : null}
+          : // )
+            null}
       </div>
     </div>
   );

@@ -1,0 +1,32 @@
+.pokemon-display-container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.search-option-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.generation-button-container {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+
+.generation-button {
+  width: 50px;
+  padding: 2px;
+  margin: 10px 3px;
+}
+
+.pokemon-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 95%;
+  margin: 0 auto 0 auto;
+  justify-content: center;
+}

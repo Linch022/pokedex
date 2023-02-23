@@ -1,97 +1,96 @@
 .image-pokemon {
-  height: 150px;
-  width: 150px;
+  height: 100px;
+  width: 100px;
 }
 
 .pokemon-card {
-  width: 380px;
-  height: 170px;
-  background-color: white;
+  width: 330px;
+  height: 130px;
   margin: 10px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
 }
+
 .text-card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 50%;
 }
 
 .Vol {
   background-color: var(--flying-color);
-  border: 4mm ridge var(--flying-color-full);
+  border: 3mm ridge var(--flying-color-full);
 }
 .Feu {
   background-color: var(--fire-color);
-  border: 4mm ridge var(--fire-color-full);
+  border: 3mm ridge var(--fire-color-full);
 }
 .Plante {
   background-color: var(--grass-color);
-  border: 4mm ridge var(--grass-color-full);
+  border: 3mm ridge var(--grass-color-full);
 }
 .Poison {
   background-color: var(--poison-color);
-  border: 4mm ridge var(--poison-color-full);
+  border: 3mm ridge var(--poison-color-full);
 }
 .Eau {
   background-color: var(--water-color);
-  border: 4mm ridge var(--water-color-full);
+  border: 3mm ridge var(--water-color-full);
 }
 .Insecte {
   background-color: var(--bug-color);
-  border: 4mm ridge var(--bug-color-full);
+  border: 3mm ridge var(--bug-color-full);
 }
 .Normal {
   background-color: var(--normal-color);
-  border: 4mm ridge var(--normal-color-full);
+  border: 3mm ridge var(--normal-color-full);
 }
 .Électrik {
   background-color: var(--electric-color);
-  border: 4mm ridge var(--electric-color-full);
+  border: 3mm ridge var(--electric-color-full);
 }
 .Sol {
   background-color: var(--ground-color);
-  border: 4mm ridge var(--ground-color-full);
+  border: 3mm ridge var(--ground-color-full);
 }
 .Fée {
   background-color: var(--fairy-color);
-  border: 4mm ridge var(--fairy-color-full);
+  border: 3mm ridge var(--fairy-color-full);
 }
 .Combat {
   background-color: var(--fighting-color);
-  border: 4mm ridge var(--fighting-color-full);
+  border: 3mm ridge var(--fighting-color-full);
 }
 .Psy {
   background-color: var(--psychic-color);
-  border: 4mm ridge var(--psychic-color-full);
+  border: 3mm ridge var(--psychic-color-full);
 }
 .Roche {
   background-color: var(--rock-color);
-  border: 4mm ridge var(--rock-color-full);
+  border: 3mm ridge var(--rock-color-full);
 }
 .Glace {
   background-color: var(--ice-color);
-  border: 4mm ridge var(--ice-color-full);
+  border: 3mm ridge var(--ice-color-full);
 }
 .Dragon {
   background-color: var(--dragon-color);
-  border: 4mm ridge var(--dragon-color-full);
+  border: 3mm ridge var(--dragon-color-full);
 }
 .Acier {
   background-color: var(--steel-color);
-  border: 4mm ridge var(--steel-color-full);
+  border: 3mm ridge var(--steel-color-full);
 }
 .Spectre {
   background-color: var(--ghost-color);
-  border: 4mm ridge var(--ghost-color-full);
+  border: 3mm ridge var(--ghost-color-full);
 }
 .Ténèbres {
   background-color: var(--dark-color);
-  border: 4mm ridge var(--dark-color-full);
+  border: 3mm ridge var(--dark-color-full);
 }
 
 .Acier-Combat {
@@ -100,7 +99,7 @@
     var(--steel-color) 50%,
     var(--fighting-color) 60%
   );
-  border: 4mm ridge var(--steel-color-full);
+  border: 3mm ridge var(--steel-color-full);
 }
 
 .Acier-Roche {
@@ -109,7 +108,7 @@
     var(--steel-color) 50%,
     var(--rock-color) 60%
   );
-  border: 4mm ridge var(--steel-color-full);
+  border: 3mm ridge var(--steel-color-full);
 }
 
 .Acier-Spectre {
@@ -118,7 +117,7 @@
     var(--steel-color) 50%,
     var(--ghost-color) 60%
   );
-  border: 4mm ridge var(--steel-color-full);
+  border: 3mm ridge var(--steel-color-full);
 }
 
 .Acier-Vol {
@@ -127,7 +126,7 @@
     var(--steel-color) 50%,
     var(--flying-color) 60%
   );
-  border: 4mm ridge var(--steel-color-full);
+  border: 3mm ridge var(--steel-color-full);
 }
 
 .Acier-Sol {
@@ -136,7 +135,7 @@
     var(--steel-color) 50%,
     var(--ground-color) 60%
   );
-  border: 4mm ridge var(--steel-color-full);
+  border: 3mm ridge var(--steel-color-full);
 }
 
 .Acier-Insecte {
@@ -145,7 +144,7 @@
     var(--steel-color) 50%,
     var(--bug-color) 60%
   );
-  border: 4mm ridge var(--steel-color-full);
+  border: 3mm ridge var(--steel-color-full);
 }
 
 .Combat-Normal {
@@ -154,7 +153,7 @@
     var(--fighting-color) 50%,
     var(--normal-color) 60%
   );
-  border: 4mm ridge var(--fighting-color-full);
+  border: 3mm ridge var(--fighting-color-full);
 }
 
 .Dragon-Acier {
@@ -163,7 +162,7 @@
     var(--dragon-color) 50%,
     var(--steel-color) 60%
   );
-  border: 4mm ridge var(--dragon-color-full);
+  border: 3mm ridge var(--dragon-color-full);
 }
 
 .Dragon-Spectre {
@@ -172,7 +171,7 @@
     var(--dragon-color) 50%,
     var(--ghost-color) 60%
   );
-  border: 4mm ridge var(--dragon-color-full);
+  border: 3mm ridge var(--dragon-color-full);
 }
 
 .Dragon-Électrik {
@@ -181,7 +180,7 @@
     var(--dragon-color) 50%,
     var(--electric-color) 60%
   );
-  border: 4mm ridge var(--dragon-color-full);
+  border: 3mm ridge var(--dragon-color-full);
 }
 
 .Dragon-Feu {
@@ -190,7 +189,7 @@
     var(--dragon-color) 50%,
     var(--fire-color) 60%
   );
-  border: 4mm ridge var(--dragon-color-full);
+  border: 3mm ridge var(--dragon-color-full);
 }
 
 .Dragon-Glace {
@@ -199,7 +198,7 @@
     var(--dragon-color) 50%,
     var(--ice-color) 60%
   );
-  border: 4mm ridge var(--dragon-color-full);
+  border: 3mm ridge var(--dragon-color-full);
 }
 
 .Dragon-Eau {
@@ -208,7 +207,7 @@
     var(--dragon-color) 50%,
     var(--water-color) 60%
   );
-  border: 4mm ridge var(--dragon-color-full);
+  border: 3mm ridge var(--dragon-color-full);
 }
 
 .Dragon-Combat {
@@ -217,7 +216,7 @@
     var(--dragon-color) 50%,
     var(--fighting-color) 60%
   );
-  border: 4mm ridge var(--dragon-color-full);
+  border: 3mm ridge var(--dragon-color-full);
 }
 
 .Dragon-Normal {
@@ -226,7 +225,7 @@
     var(--dragon-color) 50%,
     var(--normal-color) 60%
   );
-  border: 4mm ridge var(--dragon-color-full);
+  border: 3mm ridge var(--dragon-color-full);
 }
 
 .Dragon-Plante {
@@ -235,7 +234,7 @@
     var(--dragon-color) 50%,
     var(--grass-color) 60%
   );
-  border: 4mm ridge var(--dragon-color-full);
+  border: 3mm ridge var(--dragon-color-full);
 }
 
 .Dragon-Poison {
@@ -244,7 +243,7 @@
     var(--dragon-color) 50%,
     var(--poison-color) 60%
   );
-  border: 4mm ridge var(--dragon-color-full);
+  border: 3mm ridge var(--dragon-color-full);
 }
 
 .Dragon-Roche {
@@ -253,7 +252,7 @@
     var(--dragon-color) 50%,
     var(--rock-color) 60%
   );
-  border: 4mm ridge var(--dragon-color-full);
+  border: 3mm ridge var(--dragon-color-full);
 }
 
 .Dragon-Psy {
@@ -262,7 +261,7 @@
     var(--dragon-color) 50%,
     var(--psychic-color) 60%
   );
-  border: 4mm ridge var(--dragon-color-full);
+  border: 3mm ridge var(--dragon-color-full);
 }
 
 .Dragon-Sol {
@@ -271,7 +270,7 @@
     var(--dragon-color) 50%,
     var(--ground-color) 60%
   );
-  border: 4mm ridge var(--dragon-color-full);
+  border: 3mm ridge var(--dragon-color-full);
 }
 
 .Dragon-Vol {
@@ -280,7 +279,7 @@
     var(--dragon-color) 50%,
     var(--flying-color) 60%
   );
-  border: 4mm ridge var(--dragon-color-full);
+  border: 3mm ridge var(--dragon-color-full);
 }
 
 .Eau-Acier {
@@ -289,7 +288,7 @@
     var(--water-color) 50%,
     var(--steel-color) 60%
   );
-  border: 4mm ridge var(--water-color-full);
+  border: 3mm ridge var(--water-color-full);
 }
 
 .Eau-Normal {
@@ -298,7 +297,7 @@
     var(--water-color) 50%,
     var(--normal-color) 60%
   );
-  border: 4mm ridge var(--water-color-full);
+  border: 3mm ridge var(--water-color-full);
 }
 
 .Eau-Combat {
@@ -307,7 +306,7 @@
     var(--water-color) 50%,
     var(--fighting-color) 60%
   );
-  border: 4mm ridge var(--water-color-full);
+  border: 3mm ridge var(--water-color-full);
 }
 
 .Eau-Feu {
@@ -316,7 +315,7 @@
     var(--water-color) 50%,
     var(--fire-color) 60%
   );
-  border: 4mm ridge var(--water-color-full);
+  border: 3mm ridge var(--water-color-full);
 }
 
 .Eau-Insecte {
@@ -325,7 +324,7 @@
     var(--water-color) 50%,
     var(--bug-color) 60%
   );
-  border: 4mm ridge var(--water-color-full);
+  border: 3mm ridge var(--water-color-full);
 }
 
 .Eau-Sol {
@@ -334,7 +333,7 @@
     var(--water-color) 50%,
     var(--ground-color) 60%
   );
-  border: 4mm ridge var(--water-color-full);
+  border: 3mm ridge var(--water-color-full);
 }
 
 .Eau-Spectre {
@@ -343,7 +342,7 @@
     var(--water-color) 50%,
     var(--ghost-color) 60%
   );
-  border: 4mm ridge var(--water-color-full);
+  border: 3mm ridge var(--water-color-full);
 }
 
 .Eau-Vol {
@@ -352,7 +351,7 @@
     var(--water-color) 50%,
     var(--flying-color) 60%
   );
-  border: 4mm ridge var(--water-color-full);
+  border: 3mm ridge var(--water-color-full);
 }
 
 .Eau-Roche {
@@ -361,7 +360,7 @@
     var(--water-color) 50%,
     var(--rock-color) 60%
   );
-  border: 4mm ridge var(--water-color-full);
+  border: 3mm ridge var(--water-color-full);
 }
 
 .Eau-Poison {
@@ -370,7 +369,7 @@
     var(--water-color) 50%,
     var(--poison-color) 60%
   );
-  border: 4mm ridge var(--water-color-full);
+  border: 3mm ridge var(--water-color-full);
 }
 
 .Électrik-Acier {
@@ -379,7 +378,7 @@
     var(--electric-color) 50%,
     var(--steel-color) 60%
   );
-  border: 4mm ridge var(--electric-color-full);
+  border: 3mm ridge var(--electric-color-full);
 }
 
 .Électrik-Eau {
@@ -388,7 +387,7 @@
     var(--electric-color) 50%,
     var(--water-color) 60%
   );
-  border: 4mm ridge var(--electric-color-full);
+  border: 3mm ridge var(--electric-color-full);
 }
 
 .Électrik-Insecte {
@@ -397,7 +396,7 @@
     var(--electric-color) 50%,
     var(--bug-color) 60%
   );
-  border: 4mm ridge var(--electric-color-full);
+  border: 3mm ridge var(--electric-color-full);
 }
 
 .Électrik-Normal {
@@ -406,7 +405,7 @@
     var(--electric-color) 50%,
     var(--normal-color) 60%
   );
-  border: 4mm ridge var(--electric-color-full);
+  border: 3mm ridge var(--electric-color-full);
 }
 
 .Électrik-Poison {
@@ -415,7 +414,7 @@
     var(--electric-color) 50%,
     var(--poison-color) 60%
   );
-  border: 4mm ridge var(--electric-color-full);
+  border: 3mm ridge var(--electric-color-full);
 }
 
 .Électrik-Spectre {
@@ -424,7 +423,7 @@
     var(--electric-color) 50%,
     var(--ghost-color) 60%
   );
-  border: 4mm ridge var(--electric-color-full);
+  border: 3mm ridge var(--electric-color-full);
 }
 
 .Électrik-Sol {
@@ -433,7 +432,7 @@
     var(--electric-color) 50%,
     var(--ground-color) 60%
   );
-  border: 4mm ridge var(--electric-color-full);
+  border: 3mm ridge var(--electric-color-full);
 }
 
 .Électrik-Vol {
@@ -442,7 +441,7 @@
     var(--electric-color) 50%,
     var(--flying-color) 60%
   );
-  border: 4mm ridge var(--electric-color-full);
+  border: 3mm ridge var(--electric-color-full);
 }
 
 .Fée-Acier {
@@ -451,7 +450,7 @@
     var(--fairy-color) 50%,
     var(--steel-color) 60%
   );
-  border: 4mm ridge var(--fairy-color-full);
+  border: 3mm ridge var(--fairy-color-full);
 }
 
 .Fée-Normal {
@@ -460,7 +459,7 @@
     var(--fairy-color) 50%,
     var(--normal-color) 60%
   );
-  border: 4mm ridge var(--fairy-color-full);
+  border: 3mm ridge var(--fairy-color-full);
 }
 
 .Fée-Spectre {
@@ -469,7 +468,7 @@
     var(--fairy-color) 50%,
     var(--ghost-color) 60%
   );
-  border: 4mm ridge var(--fairy-color-full);
+  border: 3mm ridge var(--fairy-color-full);
 }
 
 .Fée-Plante {
@@ -478,7 +477,7 @@
     var(--fairy-color) 50%,
     var(--grass-color) 60%
   );
-  border: 4mm ridge var(--fairy-color-full);
+  border: 3mm ridge var(--fairy-color-full);
 }
 
 .Fée-Ténèbres {
@@ -487,7 +486,7 @@
     var(--fairy-color) 50%,
     var(--dark-color) 60%
   );
-  border: 4mm ridge var(--fairy-color-full);
+  border: 3mm ridge var(--fairy-color-full);
 }
 
 .Fée-Vol {
@@ -496,7 +495,7 @@
     var(--fairy-color) 50%,
     var(--flying-color) 60%
   );
-  border: 4mm ridge var(--fairy-color-full);
+  border: 3mm ridge var(--fairy-color-full);
 }
 
 .Fée-Roche {
@@ -505,7 +504,7 @@
     var(--fairy-color) 50%,
     var(--rock-color) 60%
   );
-  border: 4mm ridge var(--fairy-color-full);
+  border: 3mm ridge var(--fairy-color-full);
 }
 
 .Fée-Insecte {
@@ -514,7 +513,7 @@
     var(--fairy-color) 50%,
     var(--bug-color) 60%
   );
-  border: 4mm ridge var(--fairy-color-full);
+  border: 3mm ridge var(--fairy-color-full);
 }
 
 .Fée-Électrik {
@@ -523,7 +522,7 @@
     var(--fairy-color) 50%,
     var(--electric-color) 60%
   );
-  border: 4mm ridge var(--fairy-color-full);
+  border: 3mm ridge var(--fairy-color-full);
 }
 
 .Fée-Eau {
@@ -532,7 +531,7 @@
     var(--fairy-color) 50%,
     var(--water-color) 60%
   );
-  border: 4mm ridge var(--fairy-color-full);
+  border: 3mm ridge var(--fairy-color-full);
 }
 
 .Fée-Psy {
@@ -541,7 +540,7 @@
     var(--fairy-color) 50%,
     var(--psychic-color) 60%
   );
-  border: 4mm ridge var(--fairy-color-full);
+  border: 3mm ridge var(--fairy-color-full);
 }
 
 .Feu-Acier {
@@ -550,7 +549,7 @@
     var(--fire-color) 50%,
     var(--steel-color) 60%
   );
-  border: 4mm ridge var(--fire-color-full);
+  border: 3mm ridge var(--fire-color-full);
 }
 
 .Feu-Insecte {
@@ -559,7 +558,7 @@
     var(--fire-color) 50%,
     var(--bug-color) 60%
   );
-  border: 4mm ridge var(--fire-color-full);
+  border: 3mm ridge var(--fire-color-full);
 }
 
 .Feu-Combat {
@@ -568,7 +567,7 @@
     var(--fire-color) 50%,
     var(--fighting-color) 60%
   );
-  border: 4mm ridge var(--fire-color-full);
+  border: 3mm ridge var(--fire-color-full);
 }
 
 .Feu-Normal {
@@ -577,7 +576,7 @@
     var(--fire-color) 50%,
     var(--normal-color) 60%
   );
-  border: 4mm ridge var(--fire-color-full);
+  border: 3mm ridge var(--fire-color-full);
 }
 
 .Feu-Poison {
@@ -586,7 +585,7 @@
     var(--fire-color) 50%,
     var(--poison-color) 60%
   );
-  border: 4mm ridge var(--fire-color-full);
+  border: 3mm ridge var(--fire-color-full);
 }
 
 .Feu-Spectre {
@@ -595,7 +594,7 @@
     var(--fire-color) 50%,
     var(--ghost-color) 60%
   );
-  border: 4mm ridge var(--fire-color-full);
+  border: 3mm ridge var(--fire-color-full);
 }
 
 .Feu-Roche {
@@ -604,7 +603,7 @@
     var(--fire-color) 50%,
     var(--rock-color) 60%
   );
-  border: 4mm ridge var(--fire-color-full);
+  border: 3mm ridge var(--fire-color-full);
 }
 
 .Feu-Vol {
@@ -613,7 +612,7 @@
     var(--fire-color) 50%,
     var(--flying-color) 60%
   );
-  border: 4mm ridge var(--fire-color-full);
+  border: 3mm ridge var(--fire-color-full);
 }
 
 .Feu-Sol {
@@ -622,7 +621,7 @@
     var(--fire-color) 50%,
     var(--ground-color) 60%
   );
-  border: 4mm ridge var(--fire-color-full);
+  border: 3mm ridge var(--fire-color-full);
 }
 
 .Glace-Eau {
@@ -631,7 +630,7 @@
     var(--ice-color) 50%,
     var(--water-color) 60%
   );
-  border: 4mm ridge var(--ice-color-full);
+  border: 3mm ridge var(--ice-color-full);
 }
 
 .Glace-Combat {
@@ -640,7 +639,7 @@
     var(--ice-color) 50%,
     var(--fighting-color) 60%
   );
-  border: 4mm ridge var(--ice-color-full);
+  border: 3mm ridge var(--ice-color-full);
 }
 
 .Glace-Insecte {
@@ -649,7 +648,7 @@
     var(--ice-color) 50%,
     var(--bug-color) 60%
   );
-  border: 4mm ridge var(--ice-color-full);
+  border: 3mm ridge var(--ice-color-full);
 }
 
 .Glace-Électrik {
@@ -658,7 +657,7 @@
     var(--ice-color) 50%,
     var(--electric-color) 60%
   );
-  border: 4mm ridge var(--ice-color-full);
+  border: 3mm ridge var(--ice-color-full);
 }
 
 .Glace-Roche {
@@ -667,7 +666,7 @@
     var(--ice-color) 50%,
     var(--rock-color) 60%
   );
-  border: 4mm ridge var(--ice-color-full);
+  border: 3mm ridge var(--ice-color-full);
 }
 
 .Glace-Psy {
@@ -676,7 +675,7 @@
     var(--ice-color) 50%,
     var(--psychic-color) 60%
   );
-  border: 4mm ridge var(--ice-color-full);
+  border: 3mm ridge var(--ice-color-full);
 }
 
 .Glace-Plante {
@@ -685,7 +684,7 @@
     var(--ice-color) 50%,
     var(--grass-color) 60%
   );
-  border: 4mm ridge var(--ice-color-full);
+  border: 3mm ridge var(--ice-color-full);
 }
 
 .Glace-Spectre {
@@ -694,7 +693,7 @@
     var(--ice-color) 50%,
     var(--ghost-color) 60%
   );
-  border: 4mm ridge var(--ice-color-full);
+  border: 3mm ridge var(--ice-color-full);
 }
 
 .Glace-Sol {
@@ -703,7 +702,7 @@
     var(--ice-color) 50%,
     var(--ground-color) 60%
   );
-  border: 4mm ridge var(--ice-color-full);
+  border: 3mm ridge var(--ice-color-full);
 }
 
 .Glace-Vol {
@@ -712,7 +711,7 @@
     var(--ice-color) 50%,
     var(--flying-color) 60%
   );
-  border: 4mm ridge var(--ice-color-full);
+  border: 3mm ridge var(--ice-color-full);
 }
 
 .Insecte-Roche {
@@ -721,7 +720,7 @@
     var(--bug-color) 50%,
     var(--rock-color) 60%
   );
-  border: 4mm ridge var(--bug-color-full);
+  border: 3mm ridge var(--bug-color-full);
 }
 
 .Insecte-Combat {
@@ -730,7 +729,7 @@
     var(--bug-color) 50%,
     var(--fighting-color) 60%
   );
-  border: 4mm ridge var(--bug-color-full);
+  border: 3mm ridge var(--bug-color-full);
 }
 
 .Insecte-Sol {
@@ -739,7 +738,7 @@
     var(--bug-color) 50%,
     var(--ground-color) 60%
   );
-  border: 4mm ridge var(--bug-color-full);
+  border: 3mm ridge var(--bug-color-full);
 }
 
 .Insecte-Vol {
@@ -748,7 +747,7 @@
     var(--bug-color) 50%,
     var(--flying-color) 60%
   );
-  border: 4mm ridge var(--bug-color-full);
+  border: 3mm ridge var(--bug-color-full);
 }
 
 .Insecte-Poison {
@@ -757,7 +756,7 @@
     var(--bug-color) 50%,
     var(--poison-color) 60%
   );
-  border: 4mm ridge var(--bug-color-full);
+  border: 3mm ridge var(--bug-color-full);
 }
 
 .Plante-Combat {
@@ -766,7 +765,7 @@
     var(--grass-color) 50%,
     var(--fighting-color) 60%
   );
-  border: 4mm ridge var(--grass-color-full);
+  border: 3mm ridge var(--grass-color-full);
 }
 
 .Plante-Poison {
@@ -775,7 +774,7 @@
     var(--grass-color) 50%,
     var(--poison-color) 60%
   );
-  border: 4mm ridge var(--grass-color-full);
+  border: 3mm ridge var(--grass-color-full);
 }
 
 .Plante-Sol {
@@ -784,7 +783,7 @@
     var(--grass-color) 50%,
     var(--ground-color) 60%
   );
-  border: 4mm ridge var(--grass-color-full);
+  border: 3mm ridge var(--grass-color-full);
 }
 
 .Plante-Vol {
@@ -793,7 +792,7 @@
     var(--grass-color) 50%,
     var(--flying-color) 60%
   );
-  border: 4mm ridge var(--grass-color-full);
+  border: 3mm ridge var(--grass-color-full);
 }
 
 .Plante-Acier {
@@ -802,7 +801,7 @@
     var(--grass-color) 50%,
     var(--steel-color) 60%
   );
-  border: 4mm ridge var(--grass-color-full);
+  border: 3mm ridge var(--grass-color-full);
 }
 
 .Plante-Eau {
@@ -811,7 +810,7 @@
     var(--grass-color) 50%,
     var(--water-color) 60%
   );
-  border: 4mm ridge var(--grass-color-full);
+  border: 3mm ridge var(--grass-color-full);
 }
 
 .Plante-Normal {
@@ -820,7 +819,7 @@
     var(--grass-color) 50%,
     var(--normal-color) 60%
   );
-  border: 4mm ridge var(--grass-color-full);
+  border: 3mm ridge var(--grass-color-full);
 }
 
 .Plante-Insecte {
@@ -829,7 +828,7 @@
     var(--grass-color) 50%,
     var(--bug-color) 60%
   );
-  border: 4mm ridge var(--grass-color-full);
+  border: 3mm ridge var(--grass-color-full);
 }
 
 .Plante-Spectre {
@@ -838,7 +837,7 @@
     var(--grass-color) 50%,
     var(--ghost-color) 60%
   );
-  border: 4mm ridge var(--grass-color-full);
+  border: 3mm ridge var(--grass-color-full);
 }
 
 .Plante-Roche {
@@ -847,7 +846,7 @@
     var(--grass-color) 50%,
     var(--rock-color) 60%
   );
-  border: 4mm ridge var(--grass-color-full);
+  border: 3mm ridge var(--grass-color-full);
 }
 
 .Poison-Combat {
@@ -856,7 +855,7 @@
     var(--poison-color) 50%,
     var(--fighting-color) 60%
   );
-  border: 4mm ridge var(--poison-color-full);
+  border: 3mm ridge var(--poison-color-full);
 }
 
 .Poison-Vol {
@@ -865,7 +864,7 @@
     var(--poison-color) 50%,
     var(--flying-color) 60%
   );
-  border: 4mm ridge var(--poison-color-full);
+  border: 3mm ridge var(--poison-color-full);
 }
 
 .Psy-Acier {
@@ -874,7 +873,7 @@
     var(--psychic-color) 50%,
     var(--steel-color) 60%
   );
-  border: 4mm ridge var(--psychic-color-full);
+  border: 3mm ridge var(--psychic-color-full);
 }
 
 .Psy-Combat {
@@ -883,7 +882,7 @@
     var(--psychic-color) 50%,
     var(--fighting-color) 60%
   );
-  border: 4mm ridge var(--psychic-color-full);
+  border: 3mm ridge var(--psychic-color-full);
 }
 
 .Psy-Eau {
@@ -892,7 +891,7 @@
     var(--psychic-color) 50%,
     var(--water-color) 60%
   );
-  border: 4mm ridge var(--psychic-color-full);
+  border: 3mm ridge var(--psychic-color-full);
 }
 
 .Psy-Feu {
@@ -901,7 +900,7 @@
     var(--psychic-color) 50%,
     var(--fire-color) 60%
   );
-  border: 4mm ridge var(--psychic-color-full);
+  border: 3mm ridge var(--psychic-color-full);
 }
 
 .Psy-Roche {
@@ -910,7 +909,7 @@
     var(--psychic-color) 50%,
     var(--rock-color) 60%
   );
-  border: 4mm ridge var(--psychic-color-full);
+  border: 3mm ridge var(--psychic-color-full);
 }
 
 .Psy-Spectre {
@@ -919,7 +918,7 @@
     var(--psychic-color) 50%,
     var(--ghost-color) 60%
   );
-  border: 4mm ridge var(--psychic-color-full);
+  border: 3mm ridge var(--psychic-color-full);
 }
 
 .Psy-Sol {
@@ -928,7 +927,7 @@
     var(--psychic-color) 50%,
     var(--ground-color) 60%
   );
-  border: 4mm ridge var(--psychic-color-full);
+  border: 3mm ridge var(--psychic-color-full);
 }
 
 .Psy-Vol {
@@ -937,7 +936,7 @@
     var(--psychic-color) 50%,
     var(--flying-color) 60%
   );
-  border: 4mm ridge var(--psychic-color-full);
+  border: 3mm ridge var(--psychic-color-full);
 }
 
 .Psy-Insecte {
@@ -946,7 +945,7 @@
     var(--psychic-color) 50%,
     var(--bug-color) 60%
   );
-  border: 4mm ridge var(--psychic-color-full);
+  border: 3mm ridge var(--psychic-color-full);
 }
 
 .Psy-Normal {
@@ -955,7 +954,7 @@
     var(--psychic-color) 50%,
     var(--normal-color) 60%
   );
-  border: 4mm ridge var(--psychic-color-full);
+  border: 3mm ridge var(--psychic-color-full);
 }
 
 .Psy-Plante {
@@ -964,7 +963,7 @@
     var(--psychic-color) 50%,
     var(--grass-color) 60%
   );
-  border: 4mm ridge var(--psychic-color-full);
+  border: 3mm ridge var(--psychic-color-full);
 }
 
 .Roche-Combat {
@@ -973,7 +972,7 @@
     var(--rock-color) 50%,
     var(--fighting-color) 60%
   );
-  border: 4mm ridge var(--rock-color-full);
+  border: 3mm ridge var(--rock-color-full);
 }
 
 .Roche-Poison {
@@ -982,7 +981,7 @@
     var(--rock-color) 50%,
     var(--poison-color) 60%
   );
-  border: 4mm ridge var(--rock-color-full);
+  border: 3mm ridge var(--rock-color-full);
 }
 
 .Roche-Sol {
@@ -991,7 +990,7 @@
     var(--rock-color) 50%,
     var(--ground-color) 60%
   );
-  border: 4mm ridge var(--rock-color-full);
+  border: 3mm ridge var(--rock-color-full);
 }
 
 .Roche-Vol {
@@ -1000,7 +999,7 @@
     var(--rock-color) 50%,
     var(--flying-color) 60%
   );
-  border: 4mm ridge var(--rock-color-full);
+  border: 3mm ridge var(--rock-color-full);
 }
 
 .Sol-Normal {
@@ -1009,7 +1008,7 @@
     var(--ground-color) 50%,
     var(--normal-color) 60%
   );
-  border: 4mm ridge var(--ground-color-full);
+  border: 3mm ridge var(--ground-color-full);
 }
 
 .Sol-Vol {
@@ -1018,7 +1017,7 @@
     var(--ground-color) 50%,
     var(--flying-color) 60%
   );
-  border: 4mm ridge var(--ground-color-full);
+  border: 3mm ridge var(--ground-color-full);
 }
 
 .Sol-Poison {
@@ -1027,7 +1026,7 @@
     var(--ground-color) 50%,
     var(--poison-color) 60%
   );
-  border: 4mm ridge var(--ground-color-full);
+  border: 3mm ridge var(--ground-color-full);
 }
 
 .Spectre-Combat {
@@ -1036,7 +1035,7 @@
     var(--ghost-color) 50%,
     var(--fighting-color) 60%
   );
-  border: 4mm ridge var(--ghost-color-full);
+  border: 3mm ridge var(--ghost-color-full);
 }
 
 .Spectre-Insecte {
@@ -1045,7 +1044,7 @@
     var(--ghost-color) 50%,
     var(--bug-color) 60%
   );
-  border: 4mm ridge var(--ghost-color-full);
+  border: 3mm ridge var(--ghost-color-full);
 }
 
 .Spectre-Poison {
@@ -1054,7 +1053,7 @@
     var(--ghost-color) 50%,
     var(--poison-color) 60%
   );
-  border: 4mm ridge var(--ghost-color-full);
+  border: 3mm ridge var(--ghost-color-full);
 }
 
 .Spectre-Sol {
@@ -1063,7 +1062,7 @@
     var(--ghost-color) 50%,
     var(--ground-color) 60%
   );
-  border: 4mm ridge var(--ghost-color-full);
+  border: 3mm ridge var(--ghost-color-full);
 }
 
 .Spectre-Vol {
@@ -1072,7 +1071,7 @@
     var(--ghost-color) 50%,
     var(--flying-color) 60%
   );
-  border: 4mm ridge var(--ghost-color-full);
+  border: 3mm ridge var(--ghost-color-full);
 }
 
 .Ténèbres-Acier {
@@ -1081,7 +1080,7 @@
     var(--dark-color) 50%,
     var(--steel-color) 60%
   );
-  border: 4mm ridge var(--dark-color-full);
+  border: 3mm ridge var(--dark-color-full);
 }
 
 .Ténèbres-Dragon {
@@ -1090,7 +1089,7 @@
     var(--dark-color) 50%,
     var(--dragon-color) 60%
   );
-  border: 4mm ridge var(--dark-color-full);
+  border: 3mm ridge var(--dark-color-full);
 }
 
 .Ténèbres-Glace {
@@ -1099,7 +1098,7 @@
     var(--dark-color) 50%,
     var(--ice-color) 60%
   );
-  border: 4mm ridge var(--dark-color-full);
+  border: 3mm ridge var(--dark-color-full);
 }
 
 .Ténèbres-Eau {
@@ -1108,7 +1107,7 @@
     var(--dark-color) 50%,
     var(--water-color) 60%
   );
-  border: 4mm ridge var(--dark-color-full);
+  border: 3mm ridge var(--dark-color-full);
 }
 
 .Ténèbres-Feu {
@@ -1117,7 +1116,7 @@
     var(--dark-color) 50%,
     var(--fire-color) 60%
   );
-  border: 4mm ridge var(--dark-color-full);
+  border: 3mm ridge var(--dark-color-full);
 }
 
 .Ténèbres-Poison {
@@ -1126,7 +1125,7 @@
     var(--dark-color) 50%,
     var(--poison-color) 60%
   );
-  border: 4mm ridge var(--dark-color-full);
+  border: 3mm ridge var(--dark-color-full);
 }
 
 .Ténèbres-Spectre {
@@ -1135,7 +1134,7 @@
     var(--dark-color) 50%,
     var(--ghost-color) 60%
   );
-  border: 4mm ridge var(--dark-color-full);
+  border: 3mm ridge var(--dark-color-full);
 }
 
 .Ténèbres-Roche {
@@ -1144,7 +1143,7 @@
     var(--dark-color) 50%,
     var(--rock-color) 60%
   );
-  border: 4mm ridge var(--dark-color-full);
+  border: 3mm ridge var(--dark-color-full);
 }
 
 .Ténèbres-Psy {
@@ -1153,7 +1152,7 @@
     var(--dark-color) 50%,
     var(--psychic-color) 60%
   );
-  border: 4mm ridge var(--dark-color-full);
+  border: 3mm ridge var(--dark-color-full);
 }
 
 .Ténèbres-Plante {
@@ -1162,7 +1161,7 @@
     var(--dark-color) 50%,
     var(--grass-color) 60%
   );
-  border: 4mm ridge var(--dark-color-full);
+  border: 3mm ridge var(--dark-color-full);
 }
 
 .Ténèbres-Combat {
@@ -1171,7 +1170,7 @@
     var(--dark-color) 50%,
     var(--fighting-color) 60%
   );
-  border: 4mm ridge var(--dark-color-full);
+  border: 3mm ridge var(--dark-color-full);
 }
 
 .Ténèbres-Électrik {
@@ -1180,7 +1179,7 @@
     var(--dark-color) 50%,
     var(--electric-color) 60%
   );
-  border: 4mm ridge var(--dark-color-full);
+  border: 3mm ridge var(--dark-color-full);
 }
 
 .Ténèbres-Normal {
@@ -1189,7 +1188,7 @@
     var(--dark-color) 50%,
     var(--normal-color) 60%
   );
-  border: 4mm ridge var(--dark-color-full);
+  border: 3mm ridge var(--dark-color-full);
 }
 
 .Ténèbres-Sol {
@@ -1198,7 +1197,7 @@
     var(--dark-color) 50%,
     var(--ground-color) 60%
   );
-  border: 4mm ridge var(--dark-color-full);
+  border: 3mm ridge var(--dark-color-full);
 }
 
 .Ténèbres-Vol {
@@ -1207,7 +1206,7 @@
     var(--dark-color) 50%,
     var(--flying-color) 60%
   );
-  border: 4mm ridge var(--dark-color-full);
+  border: 3mm ridge var(--dark-color-full);
 }
 
 .Vol-Combat {
@@ -1216,7 +1215,7 @@
     var(--flying-color) 50%,
     var(--fighting-color) 60%
   );
-  border: 4mm ridge var(--flying-color-full);
+  border: 3mm ridge var(--flying-color-full);
 }
 
 .Vol-Normal {
@@ -1225,5 +1224,5 @@
     var(--flying-color) 50%,
     var(--normal-color) 60%
   );
-  border: 4mm ridge var(--flying-color-full);
+  border: 3mm ridge var(--flying-color-full);
 }

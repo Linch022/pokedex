@@ -55,10 +55,3 @@
 .app {
   background-color: var(--background-color);
 }
-
-.pokemon-card-container {
-  display: flex;
-  flex-wrap: wrap;
-  width: 80%;
-  margin: 0 auto 0 auto;
-}

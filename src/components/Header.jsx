@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/header.css';
 
 const Header = () => {
@@ -11,6 +12,11 @@ const Header = () => {
         alt='logo pokemon'
         className='pokemon-logo'
       />
+      <div className='nav'>
+        <Link to={'/'}>
+          <h3>pokedex</h3>
+        </Link>
+      </div>
     </div>
   );
 };
