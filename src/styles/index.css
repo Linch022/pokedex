@@ -50,8 +50,12 @@
   padding: 0;
   box-sizing: border-box;
   font-family: var(--main-font);
+  color: black;
 }
 
 .app {
   background-color: var(--background-color);
+}
+a {
+  text-decoration: none;
 }

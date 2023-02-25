@@ -3,6 +3,7 @@ import './styles/pokemonsTypes.css';
 import './styles/pokemonsCards.css';
 import './styles/displayPokemon.css';
 import './styles/pokemonDetails.css';
+import './styles/typesButton.css';
 import { Route, Routes } from 'react-router-dom';
 import PokemonDetails from './components/PokemonDetails';
 import Header from './components/Header';

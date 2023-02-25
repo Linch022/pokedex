@@ -1,0 +1,51 @@
+.Vol-button-active {
+  background: var(--flying-color-full);
+}
+.Feu-button-active {
+  background: var(--fire-color-full);
+}
+.Eau-button-active {
+  background: var(--water-color-full);
+}
+.Psy-button-active {
+  background: var(--psychic-color-full);
+}
+.Poison-button-active {
+  background: var(--poison-color-full);
+}
+.Sol-button-active {
+  background: var(--ground-color-full);
+}
+.Plante-button-active {
+  background: var(--grass-color-full);
+}
+.Insecte-button-active {
+  background: var(--bug-color-full);
+}
+.Roche-button-active {
+  background: var(--rock-color-full);
+}
+.Glace-button-active {
+  background: var(--ice-color-full);
+}
+.Spectre-button-active {
+  background: var(--ghost-color-full);
+}
+.Ténèbres-button-active {
+  background: var(--dark-color-full);
+}
+.Dragon-button-active {
+  background: var(--dragon-color-full);
+}
+.Électrik-button-active {
+  background: var(--electric-color-full);
+}
+.Combat-button-active {
+  background: var(--fighting-color-full);
+}
+.Acier-button-active {
+  background: var(--steel-color-full);
+}
+.Fée-button-active {
+  background: var(--fairy-color-full);
+}

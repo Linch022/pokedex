@@ -1,15 +1,39 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import GenerationButton from './GenerationButton';
 import PokemonCard from './PokemonCard';
+import TypesButtons from './TypesButtons';
 
 const DisplayPokemon = () => {
   const [choice, setChoice] = useState('generation/1');
+  const [selectedGeneration, setSelectedGeneration] = useState('generation/1');
+  const listTypes = [
+    'Vol',
+    'Feu',
+    'Eau',
+    'Psy',
+    'Poison',
+    'Sol',
+    'Plante',
+    'Insecte',
+    'Roche',
+    'Glace',
+    'Spectre',
+    'Ténèbres',
+    'Dragon',
+    'Électrik',
+    'Combat',
+    'Acier',
+    'Fée',
+  ];
+  const [selectedTypes, setSelectedTypes] = useState(listTypes);
   const [apiUrl, setApiUrl] = useState(
     `https://pokebuildapi.fr/api/v1/pokemon/${choice}`
   );
   const [pokemonData, setPokemonData] = useState([]);
   const [searchValue, setSearchValue] = useState('');
+  const [typesFilters, setTypesFilters] = useState(selectedTypes);
   // const [isloaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
@@ -24,7 +48,11 @@ const DisplayPokemon = () => {
     setApiUrl(`https://pokebuildapi.fr/api/v1/pokemon/${choice}`);
   }, [choice]);
 
-  const handleInputChange = (e) => {
+  useEffect(() => {
+    setTypesFilters(selectedTypes);
+  }, [selectedTypes]);
+
+  const handleResearchInputChange = (e) => {
     setSearchValue(e.target.value);
   };
 
@@ -38,110 +66,103 @@ const DisplayPokemon = () => {
               type='text'
               placeholder='Bonjour'
               value={searchValue}
-              onChange={handleInputChange}
+              onChange={handleResearchInputChange}
             />
           </label>
         </div>
         <div className='generation-button-container'>
-          <button
-            className='generation-button'
-            type='button'
-            onClick={() => {
-              setChoice('/generation/1');
-            }}
-          >
-            Gen 1
-          </button>
-          <button
-            className='generation-button'
-            type='button'
-            onClick={() => {
-              setChoice('generation/2');
-            }}
-          >
-            Gen 2
-          </button>
-          <button
-            className='generation-button'
-            type='button'
-            onClick={() => {
-              setChoice('generation/3');
-            }}
-          >
-            Gen 3
-          </button>
-          <button
-            className='generation-button'
-            type='button'
-            onClick={() => {
-              setChoice('generation/4');
-            }}
-          >
-            Gen 4
-          </button>
-          <button
-            className='generation-button'
-            type='button'
-            onClick={() => {
-              setChoice('generation/5');
-            }}
-          >
-            Gen 5
-          </button>
-          <button
-            className='generation-button'
-            type='button'
-            onClick={() => {
-              setChoice('generation/6');
-            }}
-          >
-            Gen 6
-          </button>
-          <button
-            className='generation-button'
-            type='button'
-            onClick={() => {
-              setChoice('generation/7');
-            }}
-          >
-            Gen 7
-          </button>
-          <button
-            className='generation-button'
-            type='button'
-            onClick={() => {
-              setChoice('generation/8');
-            }}
-          >
-            Gen 8
-          </button>
-          <button
-            className='generation-button'
-            type='button'
-            onClick={() => {
-              setChoice('');
-            }}
-          >
-            all gen
-          </button>
+          <GenerationButton
+            name={'gen 1'}
+            setChoice={setChoice}
+            selectedGeneration={selectedGeneration}
+            setSelectedGeneration={setSelectedGeneration}
+            url={'generation/1'}
+          />
+          <GenerationButton
+            name={'gen 2'}
+            setChoice={setChoice}
+            selectedGeneration={selectedGeneration}
+            setSelectedGeneration={setSelectedGeneration}
+            url={'generation/2'}
+          />
+          <GenerationButton
+            name={'gen 3'}
+            setChoice={setChoice}
+            selectedGeneration={selectedGeneration}
+            setSelectedGeneration={setSelectedGeneration}
+            url={'generation/3'}
+          />
+          <GenerationButton
+            name={'gen 4'}
+            setChoice={setChoice}
+            selectedGeneration={selectedGeneration}
+            setSelectedGeneration={setSelectedGeneration}
+            url={'generation/4'}
+          />
+          <GenerationButton
+            name={'gen 5'}
+            setChoice={setChoice}
+            selectedGeneration={selectedGeneration}
+            setSelectedGeneration={setSelectedGeneration}
+            url={'generation/5'}
+          />
+          <GenerationButton
+            name={'gen 6'}
+            setChoice={setChoice}
+            selectedGeneration={selectedGeneration}
+            setSelectedGeneration={setSelectedGeneration}
+            url={'generation/6'}
+          />
+          <GenerationButton
+            name={'gen 7'}
+            setChoice={setChoice}
+            selectedGeneration={selectedGeneration}
+            setSelectedGeneration={setSelectedGeneration}
+            url={'generation/7'}
+          />
+          <GenerationButton
+            name={'gen 8'}
+            setChoice={setChoice}
+            selectedGeneration={selectedGeneration}
+            setSelectedGeneration={setSelectedGeneration}
+            url={'generation/8'}
+          />
+          <GenerationButton
+            name={'all gen'}
+            setChoice={setChoice}
+            selectedGeneration={selectedGeneration}
+            setSelectedGeneration={setSelectedGeneration}
+            url={''}
+          />
+        </div>
+        <div className='types-button-container'>
+          {listTypes.map((type) => (
+            <TypesButtons
+              key={type}
+              name={type}
+              setSelectedTypes={setSelectedTypes}
+              selectedTypes={selectedTypes}
+            />
+          ))}
         </div>
       </div>
       <div className='pokemon-card-container'>
         {pokemonData
-          ? // pokemonData.length === 1 ? (
-            //   <PokemonCard key={pokemonData.id} pokemon={pokemonData} />
-            // ) : (
-            pokemonData
+          ? pokemonData
               .filter((pokemon) =>
                 pokemon.name.toLowerCase().includes(searchValue.toLowerCase())
+              )
+              .filter((pokemon) =>
+                pokemon.apiTypes.some((type) =>
+                  typesFilters.includes(type.name)
+                )
               )
               .map((pokemon) => (
                 <Link key={pokemon.id} to={`/pokemon/${pokemon.name}`}>
                   <PokemonCard key={pokemon.id} pokemon={pokemon} />
                 </Link>
               ))
-          : // )
-            null}
+          : null}
       </div>
     </div>
   );

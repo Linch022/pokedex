@@ -13,6 +13,9 @@ const PokemonCard = ({ pokemon }) => {
       <div className='text-card'>
         <h2>{pokemon.name}</h2>
         <PokemonsTypesList data={pokemon.apiTypes} />
+        <h3>
+          Gen {pokemon.apiGeneration} ID:{pokemon.id}
+        </h3>
       </div>
       <div>
         <img

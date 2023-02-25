@@ -10,6 +10,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  width: 60%;
+  border: 1px solid black;
+  padding: 10px;
 }
 .generation-button-container {
   width: 80%;
@@ -22,6 +26,9 @@
   padding: 2px;
   margin: 10px 3px;
 }
+.selected {
+  background: red;
+}
 
 .pokemon-card-container {
   display: flex;
@@ -29,4 +36,15 @@
   width: 95%;
   margin: 0 auto 0 auto;
   justify-content: center;
+}
+.types-button-container {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.button-type {
+  margin: 0 3px 10px 3px;
+  padding: 5px;
 }
