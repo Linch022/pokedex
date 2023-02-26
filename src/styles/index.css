@@ -53,8 +53,12 @@
   color: black;
 }
 
-.app {
+.App {
   background-color: var(--background-color);
+  min-height: 100vh;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 a {
   text-decoration: none;

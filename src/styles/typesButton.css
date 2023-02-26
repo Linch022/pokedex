@@ -49,3 +49,6 @@
 .Fée-button-active {
   background: var(--fairy-color-full);
 }
+.Normal-button-active {
+  background: var(--normal-color-full);
+}

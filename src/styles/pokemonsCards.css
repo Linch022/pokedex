@@ -1,16 +1,15 @@
 .image-pokemon {
-  height: 100px;
-  width: 100px;
+  width: 8vw;
 }
 
 .pokemon-card {
-  width: 330px;
-  height: 130px;
+  width: 25vw;
   margin: 10px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  font-size: 1.1vw;
 }
 
 .text-card {
@@ -18,6 +17,22 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+}
+
+.capture {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.pokeball {
+  width: 15%;
+  filter: grayscale(100%);
+}
+
+.pokeball:hover {
+  filter: grayscale(0%);
 }
 
 .Vol {

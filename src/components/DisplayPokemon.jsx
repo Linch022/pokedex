@@ -26,6 +26,7 @@ const DisplayPokemon = () => {
     'Combat',
     'Acier',
     'Fée',
+    'Normal',
   ];
   const [selectedTypes, setSelectedTypes] = useState(listTypes);
   const [apiUrl, setApiUrl] = useState(
@@ -34,7 +35,6 @@ const DisplayPokemon = () => {
   const [pokemonData, setPokemonData] = useState([]);
   const [searchValue, setSearchValue] = useState('');
   const [typesFilters, setTypesFilters] = useState(selectedTypes);
-  // const [isloaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -64,7 +64,7 @@ const DisplayPokemon = () => {
             Recherche par nom ou numéro:
             <input
               type='text'
-              placeholder='Bonjour'
+              placeholder='pikachu'
               value={searchValue}
               onChange={handleResearchInputChange}
             />
@@ -149,8 +149,12 @@ const DisplayPokemon = () => {
       <div className='pokemon-card-container'>
         {pokemonData
           ? pokemonData
-              .filter((pokemon) =>
-                pokemon.name.toLowerCase().includes(searchValue.toLowerCase())
+              .filter(
+                (pokemon) =>
+                  pokemon.name
+                    .toLowerCase()
+                    .includes(searchValue.toLowerCase()) ||
+                  pokemon.id.toString().includes(searchValue)
               )
               .filter((pokemon) =>
                 pokemon.apiTypes.some((type) =>

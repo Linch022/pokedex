@@ -67,12 +67,12 @@ const PokemonDetails = () => {
   }, [urlApi]);
 
   const resetData = () => {
-    setEvolution([]);
+    setEvolution(null);
   };
   return (
     <div className='pokemon-details-container'>
       {pokemonData ? (
-        <div>
+        <>
           <div
             className={`pokemon-details-card ${
               pokemonData.apiTypes.length === 2
@@ -85,6 +85,9 @@ const PokemonDetails = () => {
             <div className='text-details-container'>
               <div className='text-name-details'>
                 <h2>{pokemonData.name}</h2>
+                <h4 className='gen-id-details'>
+                  Gen: {pokemonData.apiGeneration} ID: {pokemonData.id}
+                </h4>
               </div>
               <div className='text-types-details'>
                 <PokemonsTypesList data={pokemonData.apiTypes} />
@@ -109,6 +112,14 @@ const PokemonDetails = () => {
                   vitesse : {pokemonData.stats.speed}
                 </h4>
               </div>
+              <div className='capture'>
+                <h3>capturer:</h3>
+                <img
+                  src='https://upload.wikimedia.org/wikipedia/commons/5/53/Pok%C3%A9_Ball_icon.svg'
+                  alt='pokeball'
+                  className='pokeball'
+                />
+              </div>
             </div>
             <div>
               <img
@@ -118,35 +129,44 @@ const PokemonDetails = () => {
               />
             </div>
           </div>
-          {preEvolution && preEvolution.name !== pokemonData.name ? (
-            <div className='pre-evolution'>
-              <Link key={preEvolution.id} to={`/pokemon/${preEvolution.name}`}>
-                <PokemonCard key={preEvolution.id} pokemon={preEvolution} />
-              </Link>
-            </div>
-          ) : null}
-          {evolution && evolution.name !== pokemonData.name ? (
-            <div className='evolutions'>
-              {Array.isArray(evolution) ? (
-                evolution.map((pokemon) => (
-                  <Link
-                    key={pokemon.id}
-                    to={`/pokemon/${pokemon.name}`}
-                    onClick={resetData}
-                  >
-                    <PokemonCard key={pokemon.id} pokemon={pokemon} />
-                  </Link>
-                ))
-              ) : (
-                <div className='evolution'>
-                  <Link key={evolution.id} to={`/pokemon/${evolution.name}`}>
-                    <PokemonCard key={evolution.id} pokemon={evolution} />
-                  </Link>
-                </div>
-              )}
-            </div>
-          ) : null}
-        </div>
+          <div className='evolutions-container'>
+            {preEvolution && preEvolution.name !== pokemonData.name ? (
+              <div className='pre-evolution'>
+                <h3>pré-evolution</h3>
+                <Link
+                  key={preEvolution.id}
+                  to={`/pokemon/${preEvolution.name}`}
+                >
+                  <PokemonCard key={preEvolution.id} pokemon={preEvolution} />
+                </Link>
+              </div>
+            ) : null}
+            {evolution && evolution.name !== pokemonData.name ? (
+              <div className='evolutions'>
+                <h3>evolution</h3>
+                {Array.isArray(evolution) ? (
+                  <div className='evolutions-card-container'>
+                    {evolution.map((pokemon) => (
+                      <Link
+                        key={pokemon.id}
+                        to={`/pokemon/${pokemon.name}`}
+                        onClick={resetData}
+                      >
+                        <PokemonCard key={pokemon.id} pokemon={pokemon} />
+                      </Link>
+                    ))}
+                  </div>
+                ) : (
+                  <div className='evolution'>
+                    <Link key={evolution.id} to={`/pokemon/${evolution.name}`}>
+                      <PokemonCard key={evolution.id} pokemon={evolution} />
+                    </Link>
+                  </div>
+                )}
+              </div>
+            ) : null}
+          </div>
+        </>
       ) : null}
     </div>
   );

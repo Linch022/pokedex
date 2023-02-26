@@ -3,10 +3,10 @@
   flex-direction: row-reverse;
 }
 .type {
-  margin: 10px;
-  padding: 5px;
-  border: 2px solid black;
-  font-size: 0.8rem;
+  margin: 1vw;
+  padding: 0.5vw;
+  border: 0.2vw solid black;
+  font-size: 1vw;
 }
 
 .Vol-type {
