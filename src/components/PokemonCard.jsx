@@ -16,14 +16,6 @@ const PokemonCard = ({ pokemon }) => {
           Gen: {pokemon.apiGeneration} ID: {pokemon.id}
         </h5>
         <PokemonsTypesList data={pokemon.apiTypes} />
-        <div className='capture'>
-          <h3>capturer:</h3>
-          <img
-            src='https://upload.wikimedia.org/wikipedia/commons/5/53/Pok%C3%A9_Ball_icon.svg'
-            alt='pokeball'
-            className='pokeball'
-          />
-        </div>
       </div>
       <div>
         <img
